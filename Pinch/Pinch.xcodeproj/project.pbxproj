@@ -12,6 +12,7 @@
 		FE640FE427FD971000B9F5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE640FE327FD971000B9F5A9 /* Assets.xcassets */; };
 		FE640FE727FD971000B9F5A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE640FE627FD971000B9F5A9 /* Preview Assets.xcassets */; };
 		FE640FF32800689F00B9F5A9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE640FF22800689F00B9F5A9 /* InfoPanelView.swift */; };
+		FE640FF52801755B00B9F5A9 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE640FF42801755B00B9F5A9 /* ControlImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FE640FE327FD971000B9F5A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE640FE627FD971000B9F5A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE640FF22800689F00B9F5A9 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		FE640FF42801755B00B9F5A9 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				FE640FDF27FD970E00B9F5A9 /* PinchApp.swift */,
 				FE640FF22800689F00B9F5A9 /* InfoPanelView.swift */,
+				FE640FF42801755B00B9F5A9 /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE640FF52801755B00B9F5A9 /* ControlImageView.swift in Sources */,
 				FE640FE227FD970E00B9F5A9 /* ContentView.swift in Sources */,
 				FE640FE027FD970E00B9F5A9 /* PinchApp.swift in Sources */,
 				FE640FF32800689F00B9F5A9 /* InfoPanelView.swift in Sources */,
