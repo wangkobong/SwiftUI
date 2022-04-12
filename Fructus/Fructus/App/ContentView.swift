@@ -18,11 +18,15 @@ struct ContentView: View {
       NavigationView {
         List {
           ForEach(fruits.shuffled()) { item in
-            FruitRowView(fruit: item)
-              .padding(.vertical, 4)
+            // didSelectRowAt과 같은 포지션
+            NavigationLink(destination: FruitDetailView(fruit: item)) {
+              FruitRowView(fruit: item)
+                .padding(.vertical, 4)
+            }
           }
         }
         .navigationTitle("Fruits")
+
       } //: NAVIGATION
     }
 }
