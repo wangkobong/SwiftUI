@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE630F7B2806EEAA0064FC11 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE630F7A2806EEAA0064FC11 /* FruitNutrientsView.swift */; };
 		FE8578332805AFB100E2E9CF /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8578322805AFB100E2E9CF /* FruitDetailView.swift */; };
 		FE8578352805B0AE00E2E9CF /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8578342805B0AE00E2E9CF /* FruitRowView.swift */; };
 		FE8578372805F1A000E2E9CF /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8578362805F1A000E2E9CF /* FruitHeaderView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE630F7A2806EEAA0064FC11 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
 		FE8578322805AFB100E2E9CF /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		FE8578342805B0AE00E2E9CF /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		FE8578362805F1A000E2E9CF /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				FE8578342805B0AE00E2E9CF /* FruitRowView.swift */,
 				FE8578362805F1A000E2E9CF /* FruitHeaderView.swift */,
 				FE8578382805F41D00E2E9CF /* SourceLinkView.swift */,
+				FE630F7A2806EEAA0064FC11 /* FruitNutrientsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				FE8578392805F41D00E2E9CF /* SourceLinkView.swift in Sources */,
 				FEAB796728057D4B00677E97 /* FruitData.swift in Sources */,
 				FE8578352805B0AE00E2E9CF /* FruitRowView.swift in Sources */,
+				FE630F7B2806EEAA0064FC11 /* FruitNutrientsView.swift in Sources */,
 				FEAB795D2803EBAA00677E97 /* FruitCardView.swift in Sources */,
 				FEAB795F2803F3DD00677E97 /* StartButtonView.swift in Sources */,
 				FEAB794F2803202C00677E97 /* ContentView.swift in Sources */,
