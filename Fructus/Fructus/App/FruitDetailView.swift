@@ -64,6 +64,7 @@ struct FruitDetailView: View {
         
         .edgesIgnoringSafeArea(.top) //세이프에어리어 채우기
       } //: NAVIGATION
+      .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
