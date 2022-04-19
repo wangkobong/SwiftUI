@@ -44,6 +44,7 @@
 		FED347EC280D7C2C00626550 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347EB280D7C2C00626550 /* VideoListItemView.swift */; };
 		FED347EE280DC29500626550 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347ED280DC29500626550 /* VideoPlayerView.swift */; };
 		FED347F1280DC3D100626550 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F0280DC3D100626550 /* VideoPlayerHelper.swift */; };
+		FED347F3280EE1AA00626550 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F2280EE1AA00626550 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		FED347EB280D7C2C00626550 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		FED347ED280DC29500626550 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		FED347F0280DC3D100626550 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		FED347F2280EE1AA00626550 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				FED347D4280BDE0E00626550 /* CoverImageModel.swift */,
 				FED347DB280C23DA00626550 /* AnimalsModel.swift */,
 				FED347E9280D7BC600626550 /* VideoModel.swift */,
+				FED347F2280EE1AA00626550 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				FED347D8280BDF3300626550 /* CodableBundleExtension.swift in Sources */,
 				FED347EA280D7BC600626550 /* VideoModel.swift in Sources */,
 				FED347E2280C787600626550 /* InsetGalleryView.swift in Sources */,
+				FED347F3280EE1AA00626550 /* LocationModel.swift in Sources */,
 				FED347DC280C23DA00626550 /* AnimalsModel.swift in Sources */,
 				FED347EC280D7C2C00626550 /* VideoListItemView.swift in Sources */,
 				FED347E0280C779700626550 /* HeadingView.swift in Sources */,
