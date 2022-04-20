@@ -47,36 +47,38 @@ struct MapView: View {
           MapAnnotationView(location: item)
         }
       }) //: MAP
+      
       .overlay (
+
         HStack(alignment: .center, spacing: 12) {
           Image("compass")
             .resizable()
             .scaledToFit()
           .frame(width: 48, height: 48, alignment: .center)
-          
+
           VStack(alignment: .leading, spacing: 3) {
             HStack {
               Text("Latitude:")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.accentColor)
-              
+
               Spacer()
-              
+
               Text("\(region.center.latitude)")
                 .font(.footnote)
                 .foregroundColor(.white)
             } //: HSTACK
             Divider()
-            
+
             HStack {
               Text("Longitude:")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.accentColor)
-              
+
               Spacer()
-              
+
               Text("\(region.center.longitude)")
                 .font(.footnote)
                 .foregroundColor(.white)

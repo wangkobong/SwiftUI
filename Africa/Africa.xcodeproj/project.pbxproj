@@ -46,6 +46,7 @@
 		FED347F1280DC3D100626550 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F0280DC3D100626550 /* VideoPlayerHelper.swift */; };
 		FED347F3280EE1AA00626550 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F2280EE1AA00626550 /* LocationModel.swift */; };
 		FED347F5280EE6D500626550 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F4280EE6D500626550 /* MapAnnotationView.swift */; };
+		FED347F728104EE800626550 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED347F628104EE800626550 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		FED347F0280DC3D100626550 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		FED347F2280EE1AA00626550 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		FED347F4280EE6D500626550 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		FED347F628104EE800626550 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				FED347EB280D7C2C00626550 /* VideoListItemView.swift */,
 				FED347ED280DC29500626550 /* VideoPlayerView.swift */,
 				FED347F4280EE6D500626550 /* MapAnnotationView.swift */,
+				FED347F628104EE800626550 /* MotionAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				FED347DC280C23DA00626550 /* AnimalsModel.swift in Sources */,
 				FED347EC280D7C2C00626550 /* VideoListItemView.swift in Sources */,
 				FED347E0280C779700626550 /* HeadingView.swift in Sources */,
+				FED347F728104EE800626550 /* MotionAnimationView.swift in Sources */,
 				FED347E4280CB71900626550 /* InsertFactView.swift in Sources */,
 				FED347EE280DC29500626550 /* VideoPlayerView.swift in Sources */,
 			);
