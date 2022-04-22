@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE61033F28117AE500E1931C /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61033E28117AE500E1931C /* AnimalGridItemView.swift */; };
 		FED3479B280B061F00626550 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED3479A280B061F00626550 /* AfricaApp.swift */; };
 		FED3479D280B061F00626550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED3479C280B061F00626550 /* ContentView.swift */; };
 		FED3479F280B062200626550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED3479E280B062200626550 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE61033E28117AE500E1931C /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 		FED34797280B061F00626550 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED3479A280B061F00626550 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		FED3479C280B061F00626550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				FED347ED280DC29500626550 /* VideoPlayerView.swift */,
 				FED347F4280EE6D500626550 /* MapAnnotationView.swift */,
 				FED347F628104EE800626550 /* MotionAnimationView.swift */,
+				FE61033E28117AE500E1931C /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				FED347EA280D7BC600626550 /* VideoModel.swift in Sources */,
 				FED347E2280C787600626550 /* InsetGalleryView.swift in Sources */,
 				FED347F3280EE1AA00626550 /* LocationModel.swift in Sources */,
+				FE61033F28117AE500E1931C /* AnimalGridItemView.swift in Sources */,
 				FED347DC280C23DA00626550 /* AnimalsModel.swift in Sources */,
 				FED347EC280D7C2C00626550 /* VideoListItemView.swift in Sources */,
 				FED347E0280C779700626550 /* HeadingView.swift in Sources */,
