@@ -9,8 +9,11 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-
     // MARK: - PROPERTIES
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
+//    @FetchRequest(entity: Todo.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Todo.name, ascending: true)])
     
     @State private var showingAddTodoView: Bool = false
     
@@ -31,7 +34,7 @@ struct ContentView: View {
                     Image(systemName: "plus")
                 } //: ADD BUTTON
                 .sheet(isPresented: $showingAddTodoView) {
-                    AddTodoView()
+                    AddTodoView().environment(\.managedObjectContext, self.managedObjectContext)
                 }
             }
         } //: NAVIGATION

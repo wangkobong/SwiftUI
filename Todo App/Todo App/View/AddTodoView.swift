@@ -10,7 +10,9 @@ import SwiftUI
 struct AddTodoView: View {
     // MARK: - PROPERTIES
     
+    @Environment(\.managedObjectContext) var managedObjectContext
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
     @State private var priority: String = "Normal"
@@ -38,6 +40,7 @@ struct AddTodoView: View {
                     // MARK: - SAVE BUTTON
                     Button {
                         print("Save a new todo item.")
+                    
                     } label: {
                         Text("Save")
                     } //: SAVE BUTTON
@@ -50,7 +53,7 @@ struct AddTodoView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 Button {
-                    self.presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 } label: {
                     Image(systemName: "xmark")
                 }
