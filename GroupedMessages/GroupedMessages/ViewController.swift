@@ -7,16 +7,29 @@
 
 import UIKit
 
+struct ChatMessage {
+    let text: String
+    let isIncoming: Bool
+}
+
 class ViewController: UITableViewController {
     
     private let cellID = "id"
     
-    let textMessages = [
-        "Here's my very first message.",
-        "I'm going to message another long message that will word wrap",
-        "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap ",
-        "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap"
+    let chatMessages = [
+        ChatMessage(text: "Here's my very first message.", isIncoming: true),
+        ChatMessage(text: "I'm going to message another long message that will word wrap", isIncoming: true),
+        ChatMessage(text: "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap", isIncoming: false),
+        ChatMessage(text: "ㅋㅋㅋ", isIncoming: false),
     ]
+    
+//    let textMessages = [
+//        "Here's my very first message.",
+//        "I'm going to message another long message that will word wrap",
+//        "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap ",
+//        "Yo, dawg, whaddup!",
+//        "z"
+//    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,20 +37,23 @@ class ViewController: UITableViewController {
         navigationItem.title = "Messages"
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(ChatMessageCell.self, forCellReuseIdentifier: ChatMessageCell.identifier)
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return textMessages.count
+        return chatMessages.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let message = textMessages[indexPath.row]
+        let message = chatMessages[indexPath.row].text
+        let chatMessage = chatMessages[indexPath.row]
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ChatMessageCell.identifier, for: indexPath) as? ChatMessageCell else {
             return UITableViewCell()
         }
-//        cell.messageLabel.text = "We want to provide a longer string that is actually going to wrap into the next line and maybe even third line."
-//        cell.messageLabel.numberOfLines = 0
+        
+        cell.chatMessage = chatMessage
         cell.messageLabel.text = message
         return cell
     }
