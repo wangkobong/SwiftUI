@@ -62,13 +62,55 @@ class ViewController: UITableViewController {
         return chatMessages.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let firstMessageInSection = chatMessages[section].first else { return "" }
+    class DateHeaderLabel: UILabel {
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            backgroundColor = .black
+            textColor = .white
+            textAlignment = .center
+            translatesAutoresizingMaskIntoConstraints = false
+            font = .boldSystemFont(ofSize: 14)
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
+        override var intrinsicContentSize: CGSize {
+            let originalContentSize = super.intrinsicContentSize
+            let height = originalContentSize.height + 12
+            let width = originalContentSize.width + 20
+            layer.cornerRadius = height / 2
+            layer.masksToBounds = true
+            return CGSize(width: width, height: height )
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        guard let firstMessageInSection = chatMessages[section].first else { return UIView() }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let dateString = dateFormatter.string(from: firstMessageInSection.date)
-        return "Date: \(dateString)"
+
+        let label = DateHeaderLabel()
+        label.text = dateString
+        let containerView = UIView()
+        containerView.addSubview(label)
+        label.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        
+        return containerView
     }
+    
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        guard let firstMessageInSection = chatMessages[section].first else { return "" }
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "MM/dd/yyyy"
+//        let dateString = dateFormatter.string(from: firstMessageInSection.date)
+//        return "Date: \(dateString)"
+//    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chatMessages[section].count
