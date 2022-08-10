@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  KakaoAuth
+//
+//  Created by sungyeon kim on 2022/08/10.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 20274321002a16f4e42348935500ea22
