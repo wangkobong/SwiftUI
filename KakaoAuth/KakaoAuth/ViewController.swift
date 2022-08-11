@@ -7,8 +7,11 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class ViewController: UIViewController {
+    
+    var subscriptions = Set<AnyCancellable>()
     
     lazy var kakaoAuthViewModel: KakaoAuthViewModel = { KakaoAuthViewModel()} ()
 
@@ -59,6 +62,8 @@ class ViewController: UIViewController {
         stackView.snp.makeConstraints {
             $0.center.equalTo(self.view)
         }
+        
+        setBindings()
     }
     
     // MARK: - BUTTON ACTION
@@ -69,10 +74,22 @@ class ViewController: UIViewController {
     
     @objc func didTapLogout() {
         print(#function)
-        kakaoAuthViewModel.handleKakaoLogout()
+        kakaoAuthViewModel.kakaoLogout()
     }
 
 } // MARK: - VIEW CONTROLLER
+
+    // MARK: - VIEWMODEL BINDING
+extension ViewController {
+    func setBindings() {
+        self.kakaoAuthViewModel.$isLoggedIn.sink { [weak self] isLoggedIn in
+            guard let self = self else { return }
+            self.kakaoLoginStatusLabel.text = isLoggedIn ? "로그인상태" : "로그아웃상태"
+            
+        }
+        .store(in: &subscriptions)
+    }
+}
 
 #if DEBUG
 
