@@ -14,6 +14,10 @@ class KakaoAuthViewModel: ObservableObject {
     
     var subscriptions = Set<AnyCancellable>()
     
+    init() {
+        print("KakaoAuthViewModel - init() called")
+    }
+    
     func handleKakaoLogin() {
         print("KakaoAuthViewModel - handleKakaoLogin")
         
@@ -42,5 +46,17 @@ class KakaoAuthViewModel: ObservableObject {
                     }
                 }
         }
+    } //: LOGIN
+    
+    func handleKakaoLogout() {
+        UserApi.shared.logout {(error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("logout() success.")
+            }
+        }
+
     }
 }

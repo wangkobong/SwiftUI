@@ -10,6 +10,8 @@ import SnapKit
 
 class ViewController: UIViewController {
     
+    lazy var kakaoAuthViewModel: KakaoAuthViewModel = { KakaoAuthViewModel()} ()
+
     lazy var kakaoLoginStatusLabel: UILabel = {
         let label = UILabel()
         label.text = "로그인 여부 레이블"
@@ -20,7 +22,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.setTitle("카카오 로그인", for: .normal)
         button.configuration = .filled()
-        button.addTarget(self, action: #selector(didTapLogin), for: .touchUpOutside)
+        button.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         return button
     }()
     
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.setTitle("카카오 로그아웃", for: .normal)
         button.configuration = .filled()
-        button.addTarget(self, action: #selector(didTapLogout), for: .touchUpOutside)
+        button.addTarget(self, action: #selector(didTapLogout), for: .touchUpInside)
         return button
     }()
     
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
         stack.distribution = .fill
         return stack
     }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +63,13 @@ class ViewController: UIViewController {
     
     // MARK: - BUTTON ACTION
     @objc func didTapLogin() {
-        
+        print(#function)
+        kakaoAuthViewModel.handleKakaoLogin()
     }
     
     @objc func didTapLogout() {
-        
+        print(#function)
+        kakaoAuthViewModel.handleKakaoLogout()
     }
 
 } // MARK: - VIEW CONTROLLER
