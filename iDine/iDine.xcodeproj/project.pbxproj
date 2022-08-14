@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE99FAC728A8CBCB00B2F3DD /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99FAC628A8CBCB00B2F3DD /* ItemRow.swift */; };
 		FED7DEBC28A7E2A3008226C5 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7DEBB28A7E2A3008226C5 /* iDineApp.swift */; };
 		FED7DEBE28A7E2A3008226C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7DEBD28A7E2A3008226C5 /* ContentView.swift */; };
 		FED7DEC028A7E2A5008226C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED7DEBF28A7E2A5008226C5 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE99FAC628A8CBCB00B2F3DD /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		FED7DEB828A7E2A3008226C5 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED7DEBB28A7E2A3008226C5 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		FED7DEBD28A7E2A3008226C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 				FED7DECC28A7E317008226C5 /* Menu.swift */,
 				FED7DECB28A7E317008226C5 /* Order.swift */,
 				FED7DECF28A7E337008226C5 /* menu.json */,
+				FE99FAC628A8CBCB00B2F3DD /* ItemRow.swift */,
+				FED7DEC228A7E2A5008226C5 /* Preview Assets.xcassets */,
 				FED7DEC128A7E2A5008226C5 /* Preview Content */,
 			);
 			path = iDine;
@@ -74,7 +78,6 @@
 		FED7DEC128A7E2A5008226C5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FED7DEC228A7E2A5008226C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				FED7DEBE28A7E2A3008226C5 /* ContentView.swift in Sources */,
 				FED7DEBC28A7E2A3008226C5 /* iDineApp.swift in Sources */,
 				FED7DECD28A7E317008226C5 /* Order.swift in Sources */,
+				FE99FAC728A8CBCB00B2F3DD /* ItemRow.swift in Sources */,
 				FED7DECA28A7E30F008226C5 /* Helper.swift in Sources */,
 				FED7DECE28A7E317008226C5 /* Menu.swift in Sources */,
 			);
