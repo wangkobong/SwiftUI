@@ -21,6 +21,7 @@ struct OrderView: View {
                             Text("$\(item.price)")
                         } //: HSTACK
                     } //: FOREACH
+                    .onDelete(perform: deleteItems(ao:))
                 } //: SECTION
                 
                 Section {
@@ -28,10 +29,19 @@ struct OrderView: View {
                         Text("Place Order")
                     }
                 } //: SECTION
-                .navigationTitle("Order")
-                .listStyle(InsetGroupedListStyle())
+                .disabled(order.items.isEmpty)
+
+            }
+            .navigationTitle("Order")
+            .listStyle(InsetGroupedListStyle())
+            .toolbar {
+                EditButton()
             } //: LIST
         }//: NAVIGATION
+    }
+    
+    func deleteItems(ao offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 
