@@ -11,6 +11,9 @@
 		FE034FC428C644500057C8B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE034FC328C644500057C8B4 /* ContentView.swift */; };
 		FE034FC628C644520057C8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE034FC528C644520057C8B4 /* Assets.xcassets */; };
 		FE034FC928C644520057C8B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE034FC828C644520057C8B4 /* Preview Assets.xcassets */; };
+		FE034FD128C648D00057C8B4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE034FD028C648D00057C8B4 /* Task.swift */; };
+		FE034FD328C64A160057C8B4 /* BindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE034FD228C64A160057C8B4 /* BindView.swift */; };
+		FE034FD528C64B5D0057C8B4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE034FD428C64B5D0057C8B4 /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FE034FC328C644500057C8B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE034FC528C644520057C8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE034FC828C644520057C8B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE034FD028C648D00057C8B4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FE034FD228C64A160057C8B4 /* BindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindView.swift; sourceTree = "<group>"; };
+		FE034FD428C64B5D0057C8B4 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,9 @@
 		FE034FC028C644500057C8B4 /* HelloState */ = {
 			isa = PBXGroup;
 			children = (
+				FE034FCF28C648C60057C8B4 /* Models */,
 				FE034FC128C644500057C8B4 /* HelloStateApp.swift */,
+				FE034FD228C64A160057C8B4 /* BindView.swift */,
 				FE034FC328C644500057C8B4 /* ContentView.swift */,
 				FE034FC528C644520057C8B4 /* Assets.xcassets */,
 				FE034FC728C644520057C8B4 /* Preview Content */,
@@ -65,6 +73,15 @@
 				FE034FC828C644520057C8B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE034FCF28C648C60057C8B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE034FD028C648D00057C8B4 /* Task.swift */,
+				FE034FD428C64B5D0057C8B4 /* Dish.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE034FC428C644500057C8B4 /* ContentView.swift in Sources */,
+				FE034FD528C64B5D0057C8B4 /* Dish.swift in Sources */,
+				FE034FD128C648D00057C8B4 /* Task.swift in Sources */,
+				FE034FD328C64A160057C8B4 /* BindView.swift in Sources */,
 				FE034FC228C644500057C8B4 /* HelloStateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
