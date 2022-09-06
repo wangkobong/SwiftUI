@@ -7,34 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE0691AC28C79386006B2F10 /* Podcast_PlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691AB28C79386006B2F10 /* Podcast_PlayerApp.swift */; };
-		FE0691AE28C79386006B2F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691AD28C79386006B2F10 /* ContentView.swift */; };
-		FE0691B028C79388006B2F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691AF28C79388006B2F10 /* Assets.xcassets */; };
-		FE0691B328C79388006B2F10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691B228C79388006B2F10 /* Preview Assets.xcassets */; };
-		FE0691BB28C793B4006B2F10 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691BA28C793B4006B2F10 /* Episode.swift */; };
-		FE0691BD28C79706006B2F10 /* ObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691BC28C79706006B2F10 /* ObservableObjectView.swift */; };
-		FE0691BF28C7981A006B2F10 /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691BE28C7981A006B2F10 /* FancyTimer.swift */; };
-		FE0691C128C79BF4006B2F10 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691C028C79BF4006B2F10 /* UserSettings.swift */; };
-		FE0691C328C79C60006B2F10 /* ObservableObjectAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691C228C79C60006B2F10 /* ObservableObjectAnother.swift */; };
-		FE0691C528C79DD5006B2F10 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691C428C79DD5006B2F10 /* FancyScoreView.swift */; };
+		FE0691D328C7A597006B2F10 /* HackerNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691D228C7A597006B2F10 /* HackerNewsApp.swift */; };
+		FE0691D528C7A597006B2F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691D428C7A597006B2F10 /* ContentView.swift */; };
+		FE0691D728C7A597006B2F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691D628C7A597006B2F10 /* Assets.xcassets */; };
+		FE0691DA28C7A597006B2F10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE0691A828C79386006B2F10 /* Podcast-Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Podcast-Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE0691AB28C79386006B2F10 /* Podcast_PlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast_PlayerApp.swift; sourceTree = "<group>"; };
-		FE0691AD28C79386006B2F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE0691AF28C79388006B2F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE0691B228C79388006B2F10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FE0691BA28C793B4006B2F10 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		FE0691BC28C79706006B2F10 /* ObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectView.swift; sourceTree = "<group>"; };
-		FE0691BE28C7981A006B2F10 /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
-		FE0691C028C79BF4006B2F10 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
-		FE0691C228C79C60006B2F10 /* ObservableObjectAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectAnother.swift; sourceTree = "<group>"; };
-		FE0691C428C79DD5006B2F10 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
+		FE0691CF28C7A596006B2F10 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0691D228C7A597006B2F10 /* HackerNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsApp.swift; sourceTree = "<group>"; };
+		FE0691D428C7A597006B2F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE0691D628C7A597006B2F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FE0691A528C79386006B2F10 /* Frameworks */ = {
+		FE0691CC28C7A596006B2F10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,91 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE06919F28C79386006B2F10 = {
+		FE0691C628C7A596006B2F10 = {
 			isa = PBXGroup;
 			children = (
-				FE0691AA28C79386006B2F10 /* Podcast-Player */,
-				FE0691A928C79386006B2F10 /* Products */,
+				FE0691D128C7A596006B2F10 /* HackerNews */,
+				FE0691D028C7A596006B2F10 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FE0691A928C79386006B2F10 /* Products */ = {
+		FE0691D028C7A596006B2F10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE0691A828C79386006B2F10 /* Podcast-Player.app */,
+				FE0691CF28C7A596006B2F10 /* HackerNews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE0691AA28C79386006B2F10 /* Podcast-Player */ = {
+		FE0691D128C7A596006B2F10 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
-				FE0691B928C793A4006B2F10 /* Models */,
-				FE0691AB28C79386006B2F10 /* Podcast_PlayerApp.swift */,
-				FE0691AD28C79386006B2F10 /* ContentView.swift */,
-				FE0691BC28C79706006B2F10 /* ObservableObjectView.swift */,
-				FE0691C228C79C60006B2F10 /* ObservableObjectAnother.swift */,
-				FE0691BE28C7981A006B2F10 /* FancyTimer.swift */,
-				FE0691C028C79BF4006B2F10 /* UserSettings.swift */,
-				FE0691C428C79DD5006B2F10 /* FancyScoreView.swift */,
-				FE0691B128C79388006B2F10 /* Preview Content */,
-				FE0691AF28C79388006B2F10 /* Assets.xcassets */,
+				FE0691D228C7A597006B2F10 /* HackerNewsApp.swift */,
+				FE0691D428C7A597006B2F10 /* ContentView.swift */,
+				FE0691D628C7A597006B2F10 /* Assets.xcassets */,
+				FE0691D828C7A597006B2F10 /* Preview Content */,
 			);
-			path = "Podcast-Player";
+			path = HackerNews;
 			sourceTree = "<group>";
 		};
-		FE0691B128C79388006B2F10 /* Preview Content */ = {
+		FE0691D828C7A597006B2F10 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FE0691B228C79388006B2F10 /* Preview Assets.xcassets */,
+				FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FE0691B928C793A4006B2F10 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FE0691BA28C793B4006B2F10 /* Episode.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE0691A728C79386006B2F10 /* Podcast-Player */ = {
+		FE0691CE28C7A596006B2F10 /* HackerNews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE0691B628C79388006B2F10 /* Build configuration list for PBXNativeTarget "Podcast-Player" */;
+			buildConfigurationList = FE0691DD28C7A597006B2F10 /* Build configuration list for PBXNativeTarget "HackerNews" */;
 			buildPhases = (
-				FE0691A428C79386006B2F10 /* Sources */,
-				FE0691A528C79386006B2F10 /* Frameworks */,
-				FE0691A628C79386006B2F10 /* Resources */,
+				FE0691CB28C7A596006B2F10 /* Sources */,
+				FE0691CC28C7A596006B2F10 /* Frameworks */,
+				FE0691CD28C7A596006B2F10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Podcast-Player";
-			productName = "Podcast-Player";
-			productReference = FE0691A828C79386006B2F10 /* Podcast-Player.app */;
+			name = HackerNews;
+			productName = HackerNews;
+			productReference = FE0691CF28C7A596006B2F10 /* HackerNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FE0691A028C79386006B2F10 /* Project object */ = {
+		FE0691C728C7A596006B2F10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					FE0691A728C79386006B2F10 = {
+					FE0691CE28C7A596006B2F10 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = FE0691A328C79386006B2F10 /* Build configuration list for PBXProject "Podcast-Player" */;
+			buildConfigurationList = FE0691CA28C7A596006B2F10 /* Build configuration list for PBXProject "HackerNews" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,48 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = FE06919F28C79386006B2F10;
-			productRefGroup = FE0691A928C79386006B2F10 /* Products */;
+			mainGroup = FE0691C628C7A596006B2F10;
+			productRefGroup = FE0691D028C7A596006B2F10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE0691A728C79386006B2F10 /* Podcast-Player */,
+				FE0691CE28C7A596006B2F10 /* HackerNews */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FE0691A628C79386006B2F10 /* Resources */ = {
+		FE0691CD28C7A596006B2F10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0691B328C79388006B2F10 /* Preview Assets.xcassets in Resources */,
-				FE0691B028C79388006B2F10 /* Assets.xcassets in Resources */,
+				FE0691DA28C7A597006B2F10 /* Preview Assets.xcassets in Resources */,
+				FE0691D728C7A597006B2F10 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FE0691A428C79386006B2F10 /* Sources */ = {
+		FE0691CB28C7A596006B2F10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0691BF28C7981A006B2F10 /* FancyTimer.swift in Sources */,
-				FE0691C128C79BF4006B2F10 /* UserSettings.swift in Sources */,
-				FE0691BD28C79706006B2F10 /* ObservableObjectView.swift in Sources */,
-				FE0691AE28C79386006B2F10 /* ContentView.swift in Sources */,
-				FE0691BB28C793B4006B2F10 /* Episode.swift in Sources */,
-				FE0691AC28C79386006B2F10 /* Podcast_PlayerApp.swift in Sources */,
-				FE0691C328C79C60006B2F10 /* ObservableObjectAnother.swift in Sources */,
-				FE0691C528C79DD5006B2F10 /* FancyScoreView.swift in Sources */,
+				FE0691D528C7A597006B2F10 /* ContentView.swift in Sources */,
+				FE0691D328C7A597006B2F10 /* HackerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FE0691B428C79388006B2F10 /* Debug */ = {
+		FE0691DB28C7A597006B2F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		FE0691B528C79388006B2F10 /* Release */ = {
+		FE0691DC28C7A597006B2F10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,14 +259,14 @@
 			};
 			name = Release;
 		};
-		FE0691B728C79388006B2F10 /* Debug */ = {
+		FE0691DE28C7A597006B2F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Podcast-Player/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
 				DEVELOPMENT_TEAM = YWSA3TX7T7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -312,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kobong.Podcast-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobong.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		FE0691B828C79388006B2F10 /* Release */ = {
+		FE0691DF28C7A597006B2F10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Podcast-Player/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
 				DEVELOPMENT_TEAM = YWSA3TX7T7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -341,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kobong.Podcast-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobong.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE0691A328C79386006B2F10 /* Build configuration list for PBXProject "Podcast-Player" */ = {
+		FE0691CA28C7A596006B2F10 /* Build configuration list for PBXProject "HackerNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE0691B428C79388006B2F10 /* Debug */,
-				FE0691B528C79388006B2F10 /* Release */,
+				FE0691DB28C7A597006B2F10 /* Debug */,
+				FE0691DC28C7A597006B2F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE0691B628C79388006B2F10 /* Build configuration list for PBXNativeTarget "Podcast-Player" */ = {
+		FE0691DD28C7A597006B2F10 /* Build configuration list for PBXNativeTarget "HackerNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE0691B728C79388006B2F10 /* Debug */,
-				FE0691B828C79388006B2F10 /* Release */,
+				FE0691DE28C7A597006B2F10 /* Debug */,
+				FE0691DF28C7A597006B2F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FE0691A028C79386006B2F10 /* Project object */;
+	rootObject = FE0691C728C7A596006B2F10 /* Project object */;
 }

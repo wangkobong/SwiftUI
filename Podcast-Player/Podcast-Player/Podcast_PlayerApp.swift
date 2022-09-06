@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Podcast_PlayerApp: App {
+    let userSettings = UserSettings()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ObservableObjectAnother().environmentObject(userSettings)
         }
     }
 }
