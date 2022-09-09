@@ -30,6 +30,5 @@ class StoryListViewModel: ObservableObject {
 }
 
 struct StoryViewModel {
-    
     let id: Int
 }
