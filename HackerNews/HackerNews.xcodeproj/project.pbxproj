@@ -11,6 +11,7 @@
 		FE0691D528C7A597006B2F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0691D428C7A597006B2F10 /* ContentView.swift */; };
 		FE0691D728C7A597006B2F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691D628C7A597006B2F10 /* Assets.xcassets */; };
 		FE0691DA28C7A597006B2F10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */; };
+		FE22055528CE27E0009A4352 /* StoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22055428CE27E0009A4352 /* StoryListView.swift */; };
 		FEEDA23B28C8F18D00E3F80D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA23A28C8F18D00E3F80D /* Webservice.swift */; };
 		FEEDA23E28C8F37E00E3F80D /* StoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA23D28C8F37E00E3F80D /* StoryListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		FE0691D428C7A597006B2F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE0691D628C7A597006B2F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE22055428CE27E0009A4352 /* StoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListView.swift; sourceTree = "<group>"; };
 		FEEDA23A28C8F18D00E3F80D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		FEEDA23D28C8F37E00E3F80D /* StoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,7 @@
 		FE0691D128C7A596006B2F10 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				FE22055328CE27C8009A4352 /* Views */,
 				FEEDA23C28C8F36300E3F80D /* ViewModels */,
 				FEEDA23928C8F18100E3F80D /* Services */,
 				FE0691D228C7A597006B2F10 /* HackerNewsApp.swift */,
@@ -71,6 +74,14 @@
 				FE0691D928C7A597006B2F10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE22055328CE27C8009A4352 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE22055428CE27E0009A4352 /* StoryListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FEEDA23928C8F18100E3F80D /* Services */ = {
@@ -161,6 +172,7 @@
 			files = (
 				FEEDA23E28C8F37E00E3F80D /* StoryListViewModel.swift in Sources */,
 				FE0691D528C7A597006B2F10 /* ContentView.swift in Sources */,
+				FE22055528CE27E0009A4352 /* StoryListView.swift in Sources */,
 				FE0691D328C7A597006B2F10 /* HackerNewsApp.swift in Sources */,
 				FEEDA23B28C8F18D00E3F80D /* Webservice.swift in Sources */,
 			);
