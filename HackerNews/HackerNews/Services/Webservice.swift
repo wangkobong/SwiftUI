@@ -25,7 +25,7 @@ class Webservice {
     
     private func mergeStories(ids storyIds: [Int]) -> AnyPublisher<Story, Error> {
         
-        let storyIds = Array(storyIds.prefix(100))
+        let storyIds = Array(storyIds.prefix(50))
         
         let initialPublisher = getStoryById(storyId: storyIds[0])
         let remainder = Array(storyIds.dropFirst())
