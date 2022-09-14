@@ -11,7 +11,7 @@ import SwiftUI
 struct KxWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
