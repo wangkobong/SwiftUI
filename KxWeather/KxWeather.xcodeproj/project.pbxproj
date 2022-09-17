@@ -18,6 +18,8 @@
 		FE0CB72E28D3741800E3E36F /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72D28D3741800E3E36F /* WeatherContentView.swift */; };
 		FE0CB73028D3747C00E3E36F /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72F28D3747C00E3E36F /* CurrentWeatherView.swift */; };
 		FE0CB73228D374AB00E3E36F /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB73128D374AB00E3E36F /* ForecastView.swift */; };
+		FE78C5C028D5CE1700C5D435 /* WeatherSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */; };
+		FE78C5C228D5CF3000C5D435 /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78C5C128D5CF3000C5D435 /* WeatherService+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		FE0CB72D28D3741800E3E36F /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		FE0CB72F28D3747C00E3E36F /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		FE0CB73128D374AB00E3E36F /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSevice.swift; sourceTree = "<group>"; };
+		FE78C5C128D5CF3000C5D435 /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		FE0CB72028D222CC00E3E36F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */,
+				FE78C5C128D5CF3000C5D435 /* WeatherService+Location.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				FE0CB71228D215AE00E3E36F /* KxWeatherApp.swift in Sources */,
 				FE0CB73228D374AB00E3E36F /* ForecastView.swift in Sources */,
 				FE0CB72628D223E400E3E36F /* CurrentWeather.swift in Sources */,
+				FE78C5C228D5CF3000C5D435 /* WeatherService+Location.swift in Sources */,
 				FE0CB72428D2233200E3E36F /* MainView.swift in Sources */,
 				FE0CB72A28D225A800E3E36F /* Forecast.swift in Sources */,
+				FE78C5C028D5CE1700C5D435 /* WeatherSevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
