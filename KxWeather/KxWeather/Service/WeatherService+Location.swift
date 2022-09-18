@@ -46,9 +46,11 @@ extension WeatherService: CLLocationManagerDelegate {
         
         Task {
             currentLocation = try await updateAddress(from: location)
+            await fetchWeather(location: location)
         }
     }
     
+    // 새로운 위치정보가 전달되면 process() 호출
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             process(location: location)

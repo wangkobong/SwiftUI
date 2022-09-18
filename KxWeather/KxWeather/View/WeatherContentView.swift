@@ -23,7 +23,7 @@ struct WeatherContentView: View {
                     VStack {
                         Color.clear
                         
-                        CurrentWeatherView(model: .preview)
+                        CurrentWeatherView(model: service.currentWeather)
                         
                     }//: VSTACK
                     .frame(height: reader.size.height)

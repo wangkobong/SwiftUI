@@ -15,7 +15,7 @@ struct CurrentWeather {
     let minTemperature: String
     let sunrise: String
     let sunset: String
-    let forecastData: Date
+    let forecastDate: Date
 }
 
 // 스유에서는 프리뷰에서 사용할 데이터도 함께 만드는게 좋음
@@ -28,6 +28,24 @@ extension CurrentWeather {
                               minTemperature: Double.randomTemperatureString,
                               sunrise: "오전 6:00",
                               sunset:   "오후 6:00",
-                              forecastData: .now)
+                              forecastDate: .now)
+    }
+    
+    init?(data: CodableCurrentWeather) {
+        guard let weatherInfo = data.weather.first else { return nil }
+        
+        icon = weatherInfo.icon.weatherImageName
+        weather = weatherInfo.description.description
+        temperature = data.main.temp.temperatureString
+        maxTemperature = data.main.temp_max.temperatureString
+        minTemperature = data.main.temp_min.temperatureString
+        
+        var date = Date(timeIntervalSince1970: data.sys.sunrise)
+        sunrise = date.formatted(.dateTime.hour().minute())
+        
+        date = Date(timeIntervalSince1970: data.sys.sunset)
+        sunset = date.formatted(.dateTime.hour().minute())
+        
+        forecastDate = Date(timeIntervalSince1970: data.dt)
     }
 }

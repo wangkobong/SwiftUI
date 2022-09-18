@@ -8,42 +8,43 @@
 import SwiftUI
 
 struct CurrentWeatherView: View {
-    let model: CurrentWeather
+    let model: CurrentWeather?
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: model.icon)
-                Text(model.weather)
-            }//: HSTACK
-            .font(.largeTitle)
-            
-            HStack(spacing: 20) {
-                Label(model.maxTemperature, systemImage: "arrow.up")
-                Label(model.minTemperature, systemImage: "arrow.down")
-            }//: HSTACK
-            
-          
-            
-            HStack(alignment: .lastTextBaseline) {
-                Text(model.temperature)
-                    .font(.system(size: 120))
-                    .fontWeight(.ultraLight)
-                .minimumScaleFactor(0.5) // 공간이 부족하면 작아질 수 있게
-                
-                Spacer()
-                
+            if let model = model {
                 HStack {
-                    Image(systemName: "sunrise.fill")
-                        .symbolRenderingMode(.multicolor)
-                    Text(model.sunrise)
-                    
-                    Image(systemName: "sunset.fill")
-                        .symbolRenderingMode(.multicolor)
-                    Text(model.sunset)
+                    Image(systemName: model.icon)
+                    Text(model.weather)
                 }//: HSTACK
-                .font(.caption)
-            }//: HSTACK
+                .font(.largeTitle)
+                
+                HStack(spacing: 20) {
+                    Label(model.maxTemperature, systemImage: "arrow.up")
+                    Label(model.minTemperature, systemImage: "arrow.down")
+                }//: HSTACK
+                
+              
+                HStack(alignment: .lastTextBaseline) {
+                    Text(model.temperature)
+                        .font(.system(size: 120))
+                        .fontWeight(.ultraLight)
+                    .minimumScaleFactor(0.5) // 공간이 부족하면 작아질 수 있게
+                    
+                    Spacer()
+                    
+                    HStack {
+                        Image(systemName: "sunrise.fill")
+                            .symbolRenderingMode(.multicolor)
+                        Text(model.sunrise)
+                        
+                        Image(systemName: "sunset.fill")
+                            .symbolRenderingMode(.multicolor)
+                        Text(model.sunset)
+                    }//: HSTACK
+                    .font(.caption)
+                }//: HSTACK
+            }
         }//: VSTACK
         .foregroundColor(.white)
         .padding(.horizontal)
