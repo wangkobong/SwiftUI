@@ -19,11 +19,13 @@ class WeatherService: NSObject, ObservableObject {
     @Published var forecastList: [Forecast]?
     
     @Published var lastError: String?
+    @Published var updating: Bool
     
     let isPreviewService: Bool
     
     init(preview: Bool = false) {
         isPreviewService = preview
+        updating = false
         
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
@@ -44,6 +46,8 @@ class WeatherService: NSObject, ObservableObject {
     func fetch() {
         guard !isPreviewService else { return }
         
+        updating = true
+        
         switch locationManager.authorizationStatus {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
@@ -51,8 +55,10 @@ class WeatherService: NSObject, ObservableObject {
             locationManager.requestLocation()
         case .denied, .restricted:
             lastError = "위치 서비스 사용 권한이 없습니다."
+            updating = false
         default:
             lastError = "알 수 없는 오류가 발생했습니다."
+            updating = false
         }
     }
 }
