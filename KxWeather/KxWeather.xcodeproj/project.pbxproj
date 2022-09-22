@@ -18,6 +18,18 @@
 		FE0CB72E28D3741800E3E36F /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72D28D3741800E3E36F /* WeatherContentView.swift */; };
 		FE0CB73028D3747C00E3E36F /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72F28D3747C00E3E36F /* CurrentWeatherView.swift */; };
 		FE0CB73228D374AB00E3E36F /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB73128D374AB00E3E36F /* ForecastView.swift */; };
+		FE7151C628DCB03A00CD0915 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7151C528DCB03A00CD0915 /* WidgetKit.framework */; };
+		FE7151C828DCB03A00CD0915 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7151C728DCB03A00CD0915 /* SwiftUI.framework */; };
+		FE7151CB28DCB03A00CD0915 /* KxWeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151CA28DCB03A00CD0915 /* KxWeatherWidget.swift */; };
+		FE7151CD28DCB03A00CD0915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7151CC28DCB03A00CD0915 /* Assets.xcassets */; };
+		FE7151D128DCB03A00CD0915 /* KxWeatherWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE7151C328DCB03A00CD0915 /* KxWeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE7151D928DCB0B400CD0915 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151D828DCB0B400CD0915 /* WidgetData.swift */; };
+		FE7151DA28DCB0B400CD0915 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151D828DCB0B400CD0915 /* WidgetData.swift */; };
+		FE7151DB28DCB11900CD0915 /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C66D28D77240000CF39B /* String+WeatherSymbol.swift */; };
+		FE7151DC28DCB11900CD0915 /* Double+TemperatureString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72728D224CC00E3E36F /* Double+TemperatureString.swift */; };
+		FE7151E228DCB19900CD0915 /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151E128DCB19900CD0915 /* WeatherEntry.swift */; };
+		FE7151E428DCB36800CD0915 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151E328DCB36800CD0915 /* Provider.swift */; };
+		FE7151E728DCB43C00CD0915 /* WeatherEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7151E628DCB43C00CD0915 /* WeatherEntryView.swift */; };
 		FE73F01928DA08C400D006FA /* CodableForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73F01828DA08C400D006FA /* CodableForecast.swift */; };
 		FE73F01B28DB6A6100D006FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73F01A28DB6A6100D006FA /* ErrorView.swift */; };
 		FE78C5C028D5CE1700C5D435 /* WeatherSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */; };
@@ -27,6 +39,30 @@
 		FEA8C67328D7899D000CF39B /* WeatherService+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C67228D7899D000CF39B /* WeatherService+Api.swift */; };
 		FEA8C67528D78AFF000CF39B /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C67428D78AFF000CF39B /* ApiError.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE7151CF28DCB03A00CD0915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0CB70628D215AE00E3E36F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE7151C228DCB03A00CD0915;
+			remoteInfo = KxWeatherWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE7151D228DCB03A00CD0915 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE7151D128DCB03A00CD0915 /* KxWeatherWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FE0CB70E28D215AE00E3E36F /* KxWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +77,16 @@
 		FE0CB72D28D3741800E3E36F /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		FE0CB72F28D3747C00E3E36F /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		FE0CB73128D374AB00E3E36F /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		FE7151C328DCB03A00CD0915 /* KxWeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KxWeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7151C528DCB03A00CD0915 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FE7151C728DCB03A00CD0915 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FE7151CA28DCB03A00CD0915 /* KxWeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KxWeatherWidget.swift; sourceTree = "<group>"; };
+		FE7151CC28DCB03A00CD0915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE7151CE28DCB03A00CD0915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE7151D828DCB0B400CD0915 /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
+		FE7151E128DCB19900CD0915 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
+		FE7151E328DCB36800CD0915 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		FE7151E628DCB43C00CD0915 /* WeatherEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntryView.swift; sourceTree = "<group>"; };
 		FE73F01828DA08C400D006FA /* CodableForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForecast.swift; sourceTree = "<group>"; };
 		FE73F01A28DB6A6100D006FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSevice.swift; sourceTree = "<group>"; };
@@ -60,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE7151C028DCB03A00CD0915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7151C828DCB03A00CD0915 /* SwiftUI.framework in Frameworks */,
+				FE7151C628DCB03A00CD0915 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				FE0CB71028D215AE00E3E36F /* KxWeather */,
+				FE7151C928DCB03A00CD0915 /* KxWeatherWidget */,
+				FE7151C428DCB03A00CD0915 /* Frameworks */,
 				FE0CB70F28D215AE00E3E36F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				FE0CB70E28D215AE00E3E36F /* KxWeather.app */,
+				FE7151C328DCB03A00CD0915 /* KxWeatherWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,12 +202,51 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE7151C428DCB03A00CD0915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE7151C528DCB03A00CD0915 /* WidgetKit.framework */,
+				FE7151C728DCB03A00CD0915 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE7151C928DCB03A00CD0915 /* KxWeatherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FE7151E528DCB42600CD0915 /* View */,
+				FE7151DD28DCB17000CD0915 /* Model */,
+				FE7151CA28DCB03A00CD0915 /* KxWeatherWidget.swift */,
+				FE7151E328DCB36800CD0915 /* Provider.swift */,
+				FE7151CC28DCB03A00CD0915 /* Assets.xcassets */,
+				FE7151CE28DCB03A00CD0915 /* Info.plist */,
+			);
+			path = KxWeatherWidget;
+			sourceTree = "<group>";
+		};
+		FE7151DD28DCB17000CD0915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE7151E128DCB19900CD0915 /* WeatherEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE7151E528DCB42600CD0915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE7151E628DCB43C00CD0915 /* WeatherEntryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FEA8C66F28D783FE000CF39B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FEA8C67028D7841F000CF39B /* CodableCurrentWeather.swift */,
 				FE73F01828DA08C400D006FA /* CodableForecast.swift */,
 				FEA8C67428D78AFF000CF39B /* ApiError.swift */,
+				FE7151D828DCB0B400CD0915 /* WidgetData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,15 +261,34 @@
 				FE0CB70A28D215AE00E3E36F /* Sources */,
 				FE0CB70B28D215AE00E3E36F /* Frameworks */,
 				FE0CB70C28D215AE00E3E36F /* Resources */,
+				FE7151D228DCB03A00CD0915 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE7151D028DCB03A00CD0915 /* PBXTargetDependency */,
 			);
 			name = KxWeather;
 			productName = KxWeather;
 			productReference = FE0CB70E28D215AE00E3E36F /* KxWeather.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FE7151C228DCB03A00CD0915 /* KxWeatherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7151D528DCB03A00CD0915 /* Build configuration list for PBXNativeTarget "KxWeatherWidgetExtension" */;
+			buildPhases = (
+				FE7151BF28DCB03A00CD0915 /* Sources */,
+				FE7151C028DCB03A00CD0915 /* Frameworks */,
+				FE7151C128DCB03A00CD0915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KxWeatherWidgetExtension;
+			productName = KxWeatherWidgetExtension;
+			productReference = FE7151C328DCB03A00CD0915 /* KxWeatherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -185,6 +301,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					FE0CB70D28D215AE00E3E36F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FE7151C228DCB03A00CD0915 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -203,6 +322,7 @@
 			projectRoot = "";
 			targets = (
 				FE0CB70D28D215AE00E3E36F /* KxWeather */,
+				FE7151C228DCB03A00CD0915 /* KxWeatherWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE7151C128DCB03A00CD0915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7151CD28DCB03A00CD0915 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0CB72E28D3741800E3E36F /* WeatherContentView.swift in Sources */,
+				FE7151D928DCB0B400CD0915 /* WidgetData.swift in Sources */,
 				FE73F01928DA08C400D006FA /* CodableForecast.swift in Sources */,
 				FEA8C67128D7841F000CF39B /* CodableCurrentWeather.swift in Sources */,
 				FEA8C66E28D77240000CF39B /* String+WeatherSymbol.swift in Sources */,
@@ -244,7 +373,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE7151BF28DCB03A00CD0915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7151DC28DCB11900CD0915 /* Double+TemperatureString.swift in Sources */,
+				FE7151E728DCB43C00CD0915 /* WeatherEntryView.swift in Sources */,
+				FE7151CB28DCB03A00CD0915 /* KxWeatherWidget.swift in Sources */,
+				FE7151DB28DCB11900CD0915 /* String+WeatherSymbol.swift in Sources */,
+				FE7151DA28DCB0B400CD0915 /* WidgetData.swift in Sources */,
+				FE7151E428DCB36800CD0915 /* Provider.swift in Sources */,
+				FE7151E228DCB19900CD0915 /* WeatherEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE7151D028DCB03A00CD0915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE7151C228DCB03A00CD0915 /* KxWeatherWidgetExtension */;
+			targetProxy = FE7151CF28DCB03A00CD0915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FE0CB71A28D215B100E3E36F /* Debug */ = {
@@ -364,6 +515,7 @@
 		FE0CB71D28D215B100E3E36F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -395,6 +547,7 @@
 		FE0CB71E28D215B100E3E36F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,6 +576,60 @@
 			};
 			name = Release;
 		};
+		FE7151D328DCB03A00CD0915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWSA3TX7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KxWeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KxWeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobong.KxWeather.KxWeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE7151D428DCB03A00CD0915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWSA3TX7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KxWeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KxWeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kobong.KxWeather.KxWeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +647,15 @@
 			buildConfigurations = (
 				FE0CB71D28D215B100E3E36F /* Debug */,
 				FE0CB71E28D215B100E3E36F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE7151D528DCB03A00CD0915 /* Build configuration list for PBXNativeTarget "KxWeatherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7151D328DCB03A00CD0915 /* Debug */,
+				FE7151D428DCB03A00CD0915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
