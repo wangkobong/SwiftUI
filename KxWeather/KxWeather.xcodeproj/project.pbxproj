@@ -34,6 +34,12 @@
 		FE73F01B28DB6A6100D006FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73F01A28DB6A6100D006FA /* ErrorView.swift */; };
 		FE78C5C028D5CE1700C5D435 /* WeatherSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */; };
 		FE78C5C228D5CF3000C5D435 /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78C5C128D5CF3000C5D435 /* WeatherService+Location.swift */; };
+		FE84E26C28E0961A0073D41A /* FileManager+SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E26B28E0961A0073D41A /* FileManager+SharedContainer.swift */; };
+		FE84E26D28E0961A0073D41A /* FileManager+SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E26B28E0961A0073D41A /* FileManager+SharedContainer.swift */; };
+		FE84E26E28E096EA0073D41A /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72528D223E400E3E36F /* CurrentWeather.swift */; };
+		FE84E26F28E096EC0073D41A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CB72928D225A800E3E36F /* Forecast.swift */; };
+		FE84E27028E0970C0073D41A /* CodableCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C67028D7841F000CF39B /* CodableCurrentWeather.swift */; };
+		FE84E27128E097240073D41A /* CodableForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73F01828DA08C400D006FA /* CodableForecast.swift */; };
 		FEA8C66E28D77240000CF39B /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C66D28D77240000CF39B /* String+WeatherSymbol.swift */; };
 		FEA8C67128D7841F000CF39B /* CodableCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C67028D7841F000CF39B /* CodableCurrentWeather.swift */; };
 		FEA8C67328D7899D000CF39B /* WeatherService+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8C67228D7899D000CF39B /* WeatherService+Api.swift */; };
@@ -91,6 +97,9 @@
 		FE73F01A28DB6A6100D006FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FE78C5BF28D5CE1700C5D435 /* WeatherSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSevice.swift; sourceTree = "<group>"; };
 		FE78C5C128D5CF3000C5D435 /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
+		FE84E26928E095500073D41A /* KxWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KxWeather.entitlements; sourceTree = "<group>"; };
+		FE84E26A28E095E50073D41A /* KxWeatherWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KxWeatherWidgetExtension.entitlements; sourceTree = "<group>"; };
+		FE84E26B28E0961A0073D41A /* FileManager+SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+SharedContainer.swift"; sourceTree = "<group>"; };
 		FEA8C66C28D75EBA000CF39B /* GangnamStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GangnamStation.gpx; sourceTree = "<group>"; };
 		FEA8C66D28D77240000CF39B /* String+WeatherSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WeatherSymbol.swift"; sourceTree = "<group>"; };
 		FEA8C67028D7841F000CF39B /* CodableCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCurrentWeather.swift; sourceTree = "<group>"; };
@@ -121,6 +130,7 @@
 		FE0CB70528D215AE00E3E36F = {
 			isa = PBXGroup;
 			children = (
+				FE84E26A28E095E50073D41A /* KxWeatherWidgetExtension.entitlements */,
 				FE0CB71028D215AE00E3E36F /* KxWeather */,
 				FE7151C928DCB03A00CD0915 /* KxWeatherWidget */,
 				FE7151C428DCB03A00CD0915 /* Frameworks */,
@@ -140,6 +150,7 @@
 		FE0CB71028D215AE00E3E36F /* KxWeather */ = {
 			isa = PBXGroup;
 			children = (
+				FE84E26928E095500073D41A /* KxWeather.entitlements */,
 				FE0CB72228D222F400E3E36F /* View */,
 				FE0CB72128D222E100E3E36F /* Extension */,
 				FE0CB72028D222CC00E3E36F /* Service */,
@@ -185,6 +196,7 @@
 			children = (
 				FE0CB72728D224CC00E3E36F /* Double+TemperatureString.swift */,
 				FEA8C66D28D77240000CF39B /* String+WeatherSymbol.swift */,
+				FE84E26B28E0961A0073D41A /* FileManager+SharedContainer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -358,6 +370,7 @@
 				FEA8C67128D7841F000CF39B /* CodableCurrentWeather.swift in Sources */,
 				FEA8C66E28D77240000CF39B /* String+WeatherSymbol.swift in Sources */,
 				FE73F01B28DB6A6100D006FA /* ErrorView.swift in Sources */,
+				FE84E26C28E0961A0073D41A /* FileManager+SharedContainer.swift in Sources */,
 				FE0CB73028D3747C00E3E36F /* CurrentWeatherView.swift in Sources */,
 				FE0CB72C28D373B500E3E36F /* BackgroundView.swift in Sources */,
 				FE0CB72828D224CC00E3E36F /* Double+TemperatureString.swift in Sources */,
@@ -378,9 +391,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE7151DC28DCB11900CD0915 /* Double+TemperatureString.swift in Sources */,
+				FE84E27128E097240073D41A /* CodableForecast.swift in Sources */,
 				FE7151E728DCB43C00CD0915 /* WeatherEntryView.swift in Sources */,
 				FE7151CB28DCB03A00CD0915 /* KxWeatherWidget.swift in Sources */,
+				FE84E27028E0970C0073D41A /* CodableCurrentWeather.swift in Sources */,
 				FE7151DB28DCB11900CD0915 /* String+WeatherSymbol.swift in Sources */,
+				FE84E26F28E096EC0073D41A /* Forecast.swift in Sources */,
+				FE84E26E28E096EA0073D41A /* CurrentWeather.swift in Sources */,
+				FE84E26D28E0961A0073D41A /* FileManager+SharedContainer.swift in Sources */,
 				FE7151DA28DCB0B400CD0915 /* WidgetData.swift in Sources */,
 				FE7151E428DCB36800CD0915 /* Provider.swift in Sources */,
 				FE7151E228DCB19900CD0915 /* WeatherEntry.swift in Sources */,
@@ -518,6 +536,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KxWeather/KxWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KxWeather/Preview Content\"";
@@ -550,6 +569,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KxWeather/KxWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KxWeather/Preview Content\"";
@@ -581,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KxWeatherWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWSA3TX7T7;
@@ -608,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KxWeatherWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWSA3TX7T7;

@@ -53,6 +53,9 @@ extension WeatherService: CLLocationManagerDelegate {
             currentLocation = try await updateAddress(from: location)
             await fetchWeather(location: location)
             
+            //파일 저장
+            WidgetData.write(location: currentLocation, currentWeather: currentWeather, forecast: forecastList)
+            
             updating = false
         }
     }
