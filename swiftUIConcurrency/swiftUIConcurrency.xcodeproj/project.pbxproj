@@ -12,6 +12,7 @@
 		FEB30ACE28FFEF2A00627F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB30ACD28FFEF2A00627F01 /* Assets.xcassets */; };
 		FEB30AD128FFEF2A00627F01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB30AD028FFEF2A00627F01 /* Preview Assets.xcassets */; };
 		FEB30AD828FFF08900627F01 /* DoCatchTryThrowBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB30AD728FFF08900627F01 /* DoCatchTryThrowBootcamp.swift */; };
+		FEE2CEEB2900407D00932074 /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2CEEA2900407D00932074 /* DownloadImageAsync.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FEB30ACD28FFEF2A00627F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEB30AD028FFEF2A00627F01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEB30AD728FFF08900627F01 /* DoCatchTryThrowBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchTryThrowBootcamp.swift; sourceTree = "<group>"; };
+		FEE2CEEA2900407D00932074 /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				FEB30AD728FFF08900627F01 /* DoCatchTryThrowBootcamp.swift */,
 				FEB30ACD28FFEF2A00627F01 /* Assets.xcassets */,
 				FEB30ACF28FFEF2A00627F01 /* Preview Content */,
+				FEE2CEEA2900407D00932074 /* DownloadImageAsync.swift */,
 			);
 			path = swiftUIConcurrency;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE2CEEB2900407D00932074 /* DownloadImageAsync.swift in Sources */,
 				FEB30AD828FFF08900627F01 /* DoCatchTryThrowBootcamp.swift in Sources */,
 				FEB30ACC28FFEF2900627F01 /* ContentView.swift in Sources */,
 				FEB30ACA28FFEF2900627F01 /* swiftUIConcurrencyApp.swift in Sources */,
