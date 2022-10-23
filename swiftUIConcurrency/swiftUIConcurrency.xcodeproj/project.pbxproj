@@ -43,7 +43,6 @@
 		FEB30ABD28FFEF2900627F01 = {
 			isa = PBXGroup;
 			children = (
-				FE75259229058BAC007F4BD8 /* TaskBootcamp.swift */,
 				FEB30AC828FFEF2900627F01 /* swiftUIConcurrency */,
 				FEB30AC728FFEF2900627F01 /* Products */,
 			);
@@ -67,6 +66,7 @@
 				FEB30ACF28FFEF2A00627F01 /* Preview Content */,
 				FEE2CEEA2900407D00932074 /* DownloadImageAsync.swift */,
 				FE869B5A2901A11600F5056E /* AsynAwaitBootcamp.swift */,
+				FE75259229058BAC007F4BD8 /* TaskBootcamp.swift */,
 			);
 			path = swiftUIConcurrency;
 			sourceTree = "<group>";
