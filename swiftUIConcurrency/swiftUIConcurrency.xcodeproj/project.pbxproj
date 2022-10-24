@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE6737372906E6400084F497 /* AsyncLetBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6737362906E6400084F497 /* AsyncLetBootcamp.swift */; };
 		FE75259329058BAC007F4BD8 /* TaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75259229058BAC007F4BD8 /* TaskBootcamp.swift */; };
 		FE869B5B2901A11600F5056E /* AsynAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE869B5A2901A11600F5056E /* AsynAwaitBootcamp.swift */; };
 		FEB30ACA28FFEF2900627F01 /* swiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB30AC928FFEF2900627F01 /* swiftUIConcurrencyApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE6737362906E6400084F497 /* AsyncLetBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetBootcamp.swift; sourceTree = "<group>"; };
 		FE75259229058BAC007F4BD8 /* TaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBootcamp.swift; sourceTree = "<group>"; };
 		FE869B5A2901A11600F5056E /* AsynAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynAwaitBootcamp.swift; sourceTree = "<group>"; };
 		FEB30AC628FFEF2900627F01 /* swiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				FEE2CEEA2900407D00932074 /* DownloadImageAsync.swift */,
 				FE869B5A2901A11600F5056E /* AsynAwaitBootcamp.swift */,
 				FE75259229058BAC007F4BD8 /* TaskBootcamp.swift */,
+				FE6737362906E6400084F497 /* AsyncLetBootcamp.swift */,
 			);
 			path = swiftUIConcurrency;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				FE75259329058BAC007F4BD8 /* TaskBootcamp.swift in Sources */,
 				FEB30ACC28FFEF2900627F01 /* ContentView.swift in Sources */,
 				FEB30ACA28FFEF2900627F01 /* swiftUIConcurrencyApp.swift in Sources */,
+				FE6737372906E6400084F497 /* AsyncLetBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
