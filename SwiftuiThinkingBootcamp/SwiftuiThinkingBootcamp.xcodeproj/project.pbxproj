@@ -11,6 +11,7 @@
 		FE0EC4B1290D597900E5E677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0EC4B0290D597900E5E677 /* ContentView.swift */; };
 		FE0EC4B3290D597A00E5E677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0EC4B2290D597A00E5E677 /* Assets.xcassets */; };
 		FE0EC4B6290D597A00E5E677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0EC4B5290D597A00E5E677 /* Preview Assets.xcassets */; };
+		FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FE0EC4B0290D597900E5E677 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE0EC4B2290D597A00E5E677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0EC4B5290D597A00E5E677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				FE0EC4B0290D597900E5E677 /* ContentView.swift */,
 				FE0EC4B2290D597A00E5E677 /* Assets.xcassets */,
 				FE0EC4B4290D597A00E5E677 /* Preview Content */,
+				FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */,
 			);
 			path = SwiftuiThinkingBootcamp;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0EC4B1290D597900E5E677 /* ContentView.swift in Sources */,
+				FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */,
 				FE0EC4AF290D597900E5E677 /* SwiftuiThinkingBootcampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
