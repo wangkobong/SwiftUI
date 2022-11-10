@@ -23,9 +23,9 @@ struct ForEachBootcamp: View {
 //            }
 //        }
         VStack {
-            ForEach(data.indices) { index in
-                Text("\(data[index]): \(index)")
-            }
+//            ForEach(data.indices) { index in
+//                Text("\(data[index]): \(index)")
+//            }
             
             ForEach(0..<100) { index in
                 Circle()
