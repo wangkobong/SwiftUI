@@ -20,12 +20,12 @@ struct AnimationTimingBootcamp: View {
             
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: isAnimating ? 350 : 50, height: 100)
-                .animation(
-                    .spring(
-                        response: 1.0,
-                        dampingFraction: 0.2,
-                        blendDuration: 1.0)
-                )
+//                .animation(
+//                    .spring(
+//                        response: 1.0,
+//                        dampingFraction: 0.2,
+//                        blendDuration: 1.0)
+//                )
             
 //            // 같은속도로
 //            RoundedRectangle(cornerRadius: 20)

@@ -33,10 +33,10 @@ struct AnimationBootcamp: View {
                 )
                 .rotationEffect(Angle(degrees: isAnimated ? 360 : 0))
                 .offset(y: isAnimated ? 300 : 0)
-                .animation(
-                    .default
-                    .repeatCount(5, autoreverses: true)
-                )
+//                .animation(
+//                    .default
+//                    .repeatCount(5, autoreverses: true)
+//                )
             
             Spacer()
         }
