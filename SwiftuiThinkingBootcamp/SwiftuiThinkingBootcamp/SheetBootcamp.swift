@@ -33,7 +33,7 @@ struct SheetBootcamp: View {
                 SecondScreen()
             })
 //            .sheet(isPresented: $showSheet, content: {
-//                // 시트에 분기처리 하지말기
+//                // 시트에 조건부 분기처리 하지말기
 //                SecondScreen()
 //            })
         
