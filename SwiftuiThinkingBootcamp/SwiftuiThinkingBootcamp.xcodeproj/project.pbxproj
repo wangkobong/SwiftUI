@@ -43,6 +43,8 @@
 		FED68DA42912BC890003EEE4 /* FrameBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED68DA32912BC890003EEE4 /* FrameBootcamp.swift */; };
 		FED68DA62912C10C0003EEE4 /* BackgroundAndOverlayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED68DA52912C10C0003EEE4 /* BackgroundAndOverlayBootcamp.swift */; };
 		FED95212290ECA6B00F4BFA3 /* ShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED95211290ECA6B00F4BFA3 /* ShapesBootcamp.swift */; };
+		FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */; };
+		FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		FED68DA32912BC890003EEE4 /* FrameBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameBootcamp.swift; sourceTree = "<group>"; };
 		FED68DA52912C10C0003EEE4 /* BackgroundAndOverlayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlayBootcamp.swift; sourceTree = "<group>"; };
 		FED95211290ECA6B00F4BFA3 /* ShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesBootcamp.swift; sourceTree = "<group>"; };
+		FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBootcamp.swift; sourceTree = "<group>"; };
+		FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				FE85C6E3292BBEDD00ED0934 /* PopoverBootcamp.swift */,
 				FE85C6E5292BC3C500ED0934 /* NavigationBootcamp.swift */,
 				FE85C6E7292BCA9600ED0934 /* ListBootcamp.swift */,
+				FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */,
+				FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */,
 			);
 			path = SwiftuiThinkingBootcamp;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 				FE85C6E6292BC3C500ED0934 /* NavigationBootcamp.swift in Sources */,
 				FE6291F4291AA462002C5CD9 /* ScrollViewBootcamp.swift in Sources */,
 				FED95212290ECA6B00F4BFA3 /* ShapesBootcamp.swift in Sources */,
+				FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */,
+				FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */,
 				FED68DA42912BC890003EEE4 /* FrameBootcamp.swift in Sources */,
 				FEB6D2F02915602600F05AB2 /* PaddingBootcamp.swift in Sources */,
 				FE0EC4B1290D597900E5E677 /* ContentView.swift in Sources */,
