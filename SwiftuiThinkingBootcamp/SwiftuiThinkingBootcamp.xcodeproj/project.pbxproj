@@ -23,6 +23,7 @@
 		FE3347ED294B6E2E0096EF90 /* IfLetGuardBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347EC294B6E2E0096EF90 /* IfLetGuardBootcamp.swift */; };
 		FE3347EF294B73470096EF90 /* TabGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347EE294B73470096EF90 /* TabGestureBootcamp.swift */; };
 		FE3347F1294F5C150096EF90 /* ModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */; };
+		FE3347F32950A8420096EF90 /* ViewModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */; };
 		FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */; };
 		FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */; };
 		FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */; };
@@ -75,6 +76,7 @@
 		FE3347EC294B6E2E0096EF90 /* IfLetGuardBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardBootcamp.swift; sourceTree = "<group>"; };
 		FE3347EE294B73470096EF90 /* TabGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGestureBootcamp.swift; sourceTree = "<group>"; };
 		FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBootcamp.swift; sourceTree = "<group>"; };
+		FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewBootcamp.swift; sourceTree = "<group>"; };
 		FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBootcamp.swift; sourceTree = "<group>"; };
@@ -139,12 +141,12 @@
 		FE0EC4AD290D597900E5E677 /* SwiftuiThinkingBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				FE0EC4B2290D597A00E5E677 /* Assets.xcassets */,
+				FE0EC4B4290D597A00E5E677 /* Preview Content */,
 				FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */,
 				FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */,
 				FE0EC4AE290D597900E5E677 /* SwiftuiThinkingBootcampApp.swift */,
 				FE0EC4B0290D597900E5E677 /* ContentView.swift */,
-				FE0EC4B2290D597A00E5E677 /* Assets.xcassets */,
-				FE0EC4B4290D597A00E5E677 /* Preview Content */,
 				FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */,
 				FED95211290ECA6B00F4BFA3 /* ShapesBootcamp.swift */,
 				FE680D8E291017590072610E /* ColorsBootcamp.swift */,
@@ -187,6 +189,7 @@
 				FE3347EC294B6E2E0096EF90 /* IfLetGuardBootcamp.swift */,
 				FE3347EE294B73470096EF90 /* TabGestureBootcamp.swift */,
 				FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */,
+				FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */,
 			);
 			path = SwiftuiThinkingBootcamp;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FEB6D2EE29155C8B00F05AB2 /* SpacerBootcamp.swift in Sources */,
 				FE683C172919412600A4B7DF /* initAndEnumsBootcamp.swift in Sources */,
 				FEDA830D2948C745000CB884 /* PageTabViewStyleBootcamp.swift in Sources */,
+				FE3347F32950A8420096EF90 /* ViewModelBootcamp.swift in Sources */,
 				FE042956292A69A000F8C11D /* TransitionBootcamp.swift in Sources */,
 				FE680D9129101B240072610E /* GradientBootcamp.swift in Sources */,
 				FE85C6E4292BBEDD00ED0934 /* PopoverBootcamp.swift in Sources */,
