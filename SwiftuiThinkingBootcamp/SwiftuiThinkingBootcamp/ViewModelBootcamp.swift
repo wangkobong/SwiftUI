@@ -71,7 +71,7 @@ struct ViewModelBootcamp: View {
             }
             .navigationTitle("Fruit List")
             .navigationBarItems(trailing:
-                                    NavigationLink(destination: RandomScreen(), label: {
+                                    NavigationLink(destination: RandomScreen( fruitViewModel: fruitViewModel), label: {
                 Image(systemName: "arrow.right")
                 .font(.title)
             })
@@ -86,18 +86,18 @@ struct ViewModelBootcamp: View {
 struct RandomScreen: View {
     
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var fruitViewModel: FruitViewModel
     
     var body: some View {
         ZStack {
             Color.green.ignoresSafeArea()
             
-            Button {
-                dismiss.callAsFunction()
-            } label: {
-                Text("Go Back")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
+            VStack {
+                ForEach(fruitViewModel.fruitArray) { fruit in
+                    Text(fruit.name)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
             }
 
         }
