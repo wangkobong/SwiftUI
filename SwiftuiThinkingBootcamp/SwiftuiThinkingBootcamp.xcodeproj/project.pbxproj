@@ -25,6 +25,7 @@
 		FE3347F1294F5C150096EF90 /* ModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */; };
 		FE3347F32950A8420096EF90 /* ViewModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */; };
 		FE3347F52950B5D80096EF90 /* EnvironmentObjectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F42950B5D80096EF90 /* EnvironmentObjectBootcamp.swift */; };
+		FE3347F7295209100096EF90 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */; };
 		FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */; };
 		FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */; };
 		FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */; };
@@ -79,6 +80,7 @@
 		FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBootcamp.swift; sourceTree = "<group>"; };
 		FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBootcamp.swift; sourceTree = "<group>"; };
 		FE3347F42950B5D80096EF90 /* EnvironmentObjectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectBootcamp.swift; sourceTree = "<group>"; };
+		FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewBootcamp.swift; sourceTree = "<group>"; };
 		FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBootcamp.swift; sourceTree = "<group>"; };
@@ -146,8 +148,8 @@
 				FE0EC4B2290D597A00E5E677 /* Assets.xcassets */,
 				FE0EC4B4290D597A00E5E677 /* Preview Content */,
 				FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */,
-				FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */,
 				FE0EC4AE290D597900E5E677 /* SwiftuiThinkingBootcampApp.swift */,
+				FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */,
 				FE0EC4B0290D597900E5E677 /* ContentView.swift */,
 				FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */,
 				FED95211290ECA6B00F4BFA3 /* ShapesBootcamp.swift */,
@@ -193,6 +195,7 @@
 				FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */,
 				FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */,
 				FE3347F42950B5D80096EF90 /* EnvironmentObjectBootcamp.swift */,
+				FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */,
 			);
 			path = SwiftuiThinkingBootcamp;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				FE85C6E6292BC3C500ED0934 /* NavigationBootcamp.swift in Sources */,
 				FE6291F4291AA462002C5CD9 /* ScrollViewBootcamp.swift in Sources */,
 				FED95212290ECA6B00F4BFA3 /* ShapesBootcamp.swift in Sources */,
+				FE3347F7295209100096EF90 /* AppStorageBootcamp.swift in Sources */,
 				FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */,
 				FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */,
 				FED68DA42912BC890003EEE4 /* FrameBootcamp.swift in Sources */,
