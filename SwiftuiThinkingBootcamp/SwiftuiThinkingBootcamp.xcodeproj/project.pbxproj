@@ -28,6 +28,8 @@
 		FE3347F7295209100096EF90 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */; };
 		FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */; };
 		FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */; };
+		FE51BE8C2958929C003F5724 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BE8B2958929C003F5724 /* IntroView.swift */; };
+		FE51BE8E29589408003F5724 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BE8D29589408003F5724 /* OnboardingView.swift */; };
 		FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */; };
 		FE5FC7C0293F8DBA00312C29 /* DatePickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5FC7BF293F8DBA00312C29 /* DatePickerBootcamp.swift */; };
 		FE60E18E2931E631008C07C4 /* TextEditorBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60E18D2931E631008C07C4 /* TextEditorBootcamp.swift */; };
@@ -83,6 +85,8 @@
 		FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewBootcamp.swift; sourceTree = "<group>"; };
+		FE51BE8B2958929C003F5724 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		FE51BE8D29589408003F5724 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE5FC7BD29335B4300312C29 /* PickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBootcamp.swift; sourceTree = "<group>"; };
 		FE5FC7BF293F8DBA00312C29 /* DatePickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerBootcamp.swift; sourceTree = "<group>"; };
 		FE60E18D2931E631008C07C4 /* TextEditorBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorBootcamp.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		FE0EC4AD290D597900E5E677 /* SwiftuiThinkingBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				FE51BE8A29589283003F5724 /* OnBoardingViews */,
 				FE0EC4B2290D597A00E5E677 /* Assets.xcassets */,
 				FE0EC4B4290D597A00E5E677 /* Preview Content */,
 				FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */,
@@ -206,6 +211,15 @@
 				FE0EC4B5290D597A00E5E677 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE51BE8A29589283003F5724 /* OnBoardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				FE51BE8B2958929C003F5724 /* IntroView.swift */,
+				FE51BE8D29589408003F5724 /* OnboardingView.swift */,
+			);
+			path = OnBoardingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +307,10 @@
 				FED68DA42912BC890003EEE4 /* FrameBootcamp.swift in Sources */,
 				FEB6D2F02915602600F05AB2 /* PaddingBootcamp.swift in Sources */,
 				FE0EC4B1290D597900E5E677 /* ContentView.swift in Sources */,
+				FE51BE8E29589408003F5724 /* OnboardingView.swift in Sources */,
 				FE683C152917E3E700A4B7DF /* StackBootcamp.swift in Sources */,
 				FE3347EF294B73470096EF90 /* TabGestureBootcamp.swift in Sources */,
+				FE51BE8C2958929C003F5724 /* IntroView.swift in Sources */,
 				FE3347ED294B6E2E0096EF90 /* IfLetGuardBootcamp.swift in Sources */,
 				FE22E8F72928CEDB003052F0 /* TernaryBootcamp.swift in Sources */,
 				FE1AFCE8292D1EAC00DD2866 /* AlertBootcamp.swift in Sources */,
