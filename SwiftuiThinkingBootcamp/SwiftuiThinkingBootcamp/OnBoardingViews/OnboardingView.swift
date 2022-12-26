@@ -17,6 +17,7 @@ struct OnboardingView: View {
      3 - Add gender
      */
     @State var onboardingState: Int = 0
+    let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     @State var name: String = ""
     @State var age: Double = 50
     @State var gender: String = ""
@@ -28,12 +29,16 @@ struct OnboardingView: View {
                 switch onboardingState {
                 case 0:
                     welcomeSection
+                        .transition(transition)
                 case 1:
                     addNameSection
+                        .transition(transition)
                 case 2:
                     addAgeSection
+                        .transition(transition)
                 case 3:
                     addGenderSection
+                        .transition(transition)
                 default:
                     RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(.green)
@@ -180,8 +185,13 @@ extension OnboardingView {
 extension OnboardingView {
     
     func handleNextButtonPressed() {
-        withAnimation(.spring()) {
-            onboardingState += 1
+        
+        if onboardingState == 3 {
+            // sign in
+        } else {
+            withAnimation(.spring()) {
+                onboardingState += 1
+            }
         }
     }
 }
