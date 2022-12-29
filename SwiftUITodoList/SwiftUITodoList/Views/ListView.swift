@@ -9,17 +9,15 @@ import SwiftUI
 
 struct ListView: View {
     
-    @State var items: [ItemModel] = [
-        ItemModel(title: "출근하기", isCompleted: true),
-        ItemModel(title: "헬스장가기", isCompleted: false),
-        ItemModel(title: "코딩하기", isCompleted: true),
-    ]
-    
+    @EnvironmentObject var listViewModel: ListViewModel
+
     var body: some View {
         List {
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ListRowView(item: item)
             }
+            .onDelete(perform: listViewModel.deleteItem(indexSet:))
+            .onMove(perform: listViewModel.moveItem(from:to:))
         }
         .listStyle(PlainListStyle())
         .navigationTitle("Todo List 🖥️")
@@ -31,6 +29,7 @@ struct ListView: View {
                 })
         )
     }
+
 }
 
 struct ListView_Previews: PreviewProvider {
@@ -38,6 +37,7 @@ struct ListView_Previews: PreviewProvider {
         NavigationView {
             ListView()
         }
+        .environmentObject(ListViewModel())
     }
 }
 

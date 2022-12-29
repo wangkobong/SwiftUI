@@ -14,6 +14,7 @@
 		FE51BEAF295C8B1D003F5724 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BEAE295C8B1D003F5724 /* ListRowView.swift */; };
 		FE51BEB1295C8D84003F5724 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BEB0295C8D84003F5724 /* AddView.swift */; };
 		FE51BEB4295C9187003F5724 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BEB3295C9187003F5724 /* ItemModel.swift */; };
+		FE51BEB7295DE731003F5724 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BEB6295DE731003F5724 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FE51BEAE295C8B1D003F5724 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		FE51BEB0295C8D84003F5724 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		FE51BEB3295C9187003F5724 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		FE51BEB6295DE731003F5724 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		FE51BE9C295C8683003F5724 /* SwiftUITodoList */ = {
 			isa = PBXGroup;
 			children = (
+				FE51BEB5295DE719003F5724 /* ViewModels */,
 				FE51BEB2295C9161003F5724 /* Models */,
 				FE51BEAB295C86EB003F5724 /* Views */,
 				FE51BE9D295C8683003F5724 /* SwiftUITodoListApp.swift */,
@@ -90,6 +93,14 @@
 				FE51BEB3295C9187003F5724 /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FE51BEB5295DE719003F5724 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FE51BEB6295DE731003F5724 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				FE51BEB4295C9187003F5724 /* ItemModel.swift in Sources */,
 				FE51BEB1295C8D84003F5724 /* AddView.swift in Sources */,
+				FE51BEB7295DE731003F5724 /* ListViewModel.swift in Sources */,
 				FE51BE9E295C8683003F5724 /* SwiftUITodoListApp.swift in Sources */,
 				FE51BEAD295C8701003F5724 /* ListView.swift in Sources */,
 				FE51BEAF295C8B1D003F5724 /* ListRowView.swift in Sources */,
