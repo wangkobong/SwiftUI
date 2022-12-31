@@ -22,11 +22,13 @@ final class ListViewModel: ObservableObject {
     }
     
     func getItems() {
+        print(#function)
         guard
             let data = UserDefaults.standard.data(forKey: itemsKey),
             let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data)
         else { return }
-        items = savedItems
+        print(savedItems)
+        self.items = savedItems
     }
     
     func deleteItem(indexSet: IndexSet) {
@@ -51,6 +53,10 @@ final class ListViewModel: ObservableObject {
     }
     
     func saveItems() {
+        print(#function)
+        items.forEach {
+            print($0)
+        }
         if let encodedData = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encodedData, forKey: itemsKey)
         }
