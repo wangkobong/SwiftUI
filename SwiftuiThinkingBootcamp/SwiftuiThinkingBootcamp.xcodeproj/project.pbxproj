@@ -34,7 +34,7 @@
 		FE3D223A2961C09C008FFD7D /* DragGestureBootcampBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D22392961C09C008FFD7D /* DragGestureBootcampBootcamp.swift */; };
 		FE3D223C2961C693008FFD7D /* DragGestureBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223B2961C692008FFD7D /* DragGestureBootcamp2.swift */; };
 		FE3D223E296320E8008FFD7D /* ScrollViewReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223D296320E8008FFD7D /* ScrollViewReaderBootcamp.swift */; };
-		FE3D224029632875008FFD7D /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223F29632875008FFD7D /* GeometryReader.swift */; };
+		FE3D224029632875008FFD7D /* GeometryReaderBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223F29632875008FFD7D /* GeometryReaderBootcamp2.swift */; };
 		FE51BE8C2958929C003F5724 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BE8B2958929C003F5724 /* IntroView.swift */; };
 		FE51BE8E29589408003F5724 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BE8D29589408003F5724 /* OnboardingView.swift */; };
 		FE51BE902959F915003F5724 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE51BE8F2959F915003F5724 /* ProfileView.swift */; };
@@ -99,7 +99,7 @@
 		FE3D22392961C09C008FFD7D /* DragGestureBootcampBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcampBootcamp.swift; sourceTree = "<group>"; };
 		FE3D223B2961C692008FFD7D /* DragGestureBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp2.swift; sourceTree = "<group>"; };
 		FE3D223D296320E8008FFD7D /* ScrollViewReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderBootcamp.swift; sourceTree = "<group>"; };
-		FE3D223F29632875008FFD7D /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		FE3D223F29632875008FFD7D /* GeometryReaderBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderBootcamp2.swift; sourceTree = "<group>"; };
 		FE51BE8B2958929C003F5724 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		FE51BE8D29589408003F5724 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE51BE8F2959F915003F5724 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 				FE3D22392961C09C008FFD7D /* DragGestureBootcampBootcamp.swift */,
 				FE3D223B2961C692008FFD7D /* DragGestureBootcamp2.swift */,
 				FE3D223D296320E8008FFD7D /* ScrollViewReaderBootcamp.swift */,
-				FE3D223F29632875008FFD7D /* GeometryReader.swift */,
+				FE3D223F29632875008FFD7D /* GeometryReaderBootcamp2.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 				FE51BE902959F915003F5724 /* ProfileView.swift in Sources */,
 				FE99CD5C29267EB300F8538B /* BindingBootcamp.swift in Sources */,
 				FE3347F1294F5C150096EF90 /* ModelBootcamp.swift in Sources */,
-				FE3D224029632875008FFD7D /* GeometryReader.swift in Sources */,
+				FE3D224029632875008FFD7D /* GeometryReaderBootcamp2.swift in Sources */,
 				FE22E8F92928D1B2003052F0 /* AnimationBootcamp.swift in Sources */,
 				FE6291F6291D4495002C5CD9 /* LazyVGridBootcamp.swift in Sources */,
 				FE680D9529116DA30072610E /* ImageBootcamp.swift in Sources */,
