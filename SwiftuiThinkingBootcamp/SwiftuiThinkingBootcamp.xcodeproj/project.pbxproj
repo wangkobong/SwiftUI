@@ -53,6 +53,10 @@
 		FE680D9529116DA30072610E /* ImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE680D9429116DA30072610E /* ImageBootcamp.swift */; };
 		FE683C152917E3E700A4B7DF /* StackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE683C142917E3E700A4B7DF /* StackBootcamp.swift */; };
 		FE683C172919412600A4B7DF /* initAndEnumsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */; };
+		FE830F18296473AA005AEB9C /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */; };
+		FE830F1F29647802005AEB9C /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F1E29647802005AEB9C /* tada.mp3 */; };
+		FE830F212964780F005AEB9C /* heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F202964780F005AEB9C /* heartbeat.mp3 */; };
+		FE830F2329647A92005AEB9C /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */; };
 		FE85C6E4292BBEDD00ED0934 /* PopoverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E3292BBEDD00ED0934 /* PopoverBootcamp.swift */; };
 		FE85C6E6292BC3C500ED0934 /* NavigationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E5292BC3C500ED0934 /* NavigationBootcamp.swift */; };
 		FE85C6E8292BCA9600ED0934 /* ListBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E7292BCA9600ED0934 /* ListBootcamp.swift */; };
@@ -69,6 +73,7 @@
 		FEDA830F294A210B000CB884 /* DocumentationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA830E294A210B000CB884 /* DocumentationBootcamp.swift */; };
 		FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */; };
 		FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */; };
+		FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +124,10 @@
 		FE680D9429116DA30072610E /* ImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootcamp.swift; sourceTree = "<group>"; };
 		FE683C142917E3E700A4B7DF /* StackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBootcamp.swift; sourceTree = "<group>"; };
 		FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initAndEnumsBootcamp.swift; sourceTree = "<group>"; };
+		FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
+		FE830F1E29647802005AEB9C /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
+		FE830F202964780F005AEB9C /* heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heartbeat.mp3; sourceTree = "<group>"; };
+		FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E3292BBEDD00ED0934 /* PopoverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E5292BC3C500ED0934 /* NavigationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E7292BCA9600ED0934 /* ListBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBootcamp.swift; sourceTree = "<group>"; };
@@ -135,6 +144,7 @@
 		FEDA830E294A210B000CB884 /* DocumentationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationBootcamp.swift; sourceTree = "<group>"; };
 		FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBootcamp.swift; sourceTree = "<group>"; };
 		FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBootcamp.swift; sourceTree = "<group>"; };
+		FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +245,7 @@
 		FE3D223229619ED8008FFD7D /* Continued Learning */ = {
 			isa = PBXGroup;
 			children = (
+				FE830F19296477BF005AEB9C /* Sounds */,
 				FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */,
 				FE3D22352961B8C5008FFD7D /* MagnificationGestureBootcamp.swift */,
 				FE3D22372961BF02008FFD7D /* RotationGestureBootcamp.swift */,
@@ -243,6 +254,9 @@
 				FE3D223D296320E8008FFD7D /* ScrollViewReaderBootcamp.swift */,
 				FE3D223F29632875008FFD7D /* GeometryReaderBootcamp2.swift */,
 				FE3D224129633162008FFD7D /* MultipleSheetsBootcamp.swift */,
+				FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */,
+				FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */,
+				FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -255,6 +269,15 @@
 				FE51BE8F2959F915003F5724 /* ProfileView.swift */,
 			);
 			path = OnBoardingViews;
+			sourceTree = "<group>";
+		};
+		FE830F19296477BF005AEB9C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FE830F202964780F005AEB9C /* heartbeat.mp3 */,
+				FE830F1E29647802005AEB9C /* tada.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +338,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE830F1F29647802005AEB9C /* tada.mp3 in Resources */,
 				FE0EC4B6290D597A00E5E677 /* Preview Assets.xcassets in Resources */,
 				FE0EC4B3290D597A00E5E677 /* Assets.xcassets in Resources */,
+				FE830F212964780F005AEB9C /* heartbeat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +374,11 @@
 				FE3347EF294B73470096EF90 /* TabGestureBootcamp.swift in Sources */,
 				FE51BE8C2958929C003F5724 /* IntroView.swift in Sources */,
 				FE3347ED294B6E2E0096EF90 /* IfLetGuardBootcamp.swift in Sources */,
+				FE830F18296473AA005AEB9C /* SoundsBootcamp.swift in Sources */,
 				FE22E8F72928CEDB003052F0 /* TernaryBootcamp.swift in Sources */,
 				FE1AFCE8292D1EAC00DD2866 /* AlertBootcamp.swift in Sources */,
 				FE6291F8291D4A63002C5CD9 /* SafeAreaBootcamp.swift in Sources */,
+				FE830F2329647A92005AEB9C /* LocalNotificationBootcamp.swift in Sources */,
 				FE1AFCEA292E725E00DD2866 /* actionSheetBootcamp.swift in Sources */,
 				FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */,
 				FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */,
@@ -369,6 +396,7 @@
 				FE3D223E296320E8008FFD7D /* ScrollViewReaderBootcamp.swift in Sources */,
 				FE3D223429619EF7008FFD7D /* LongPressGestureBootcamp.swift in Sources */,
 				FE042956292A69A000F8C11D /* TransitionBootcamp.swift in Sources */,
+				FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */,
 				FE680D9129101B240072610E /* GradientBootcamp.swift in Sources */,
 				FE85C6E4292BBEDD00ED0934 /* PopoverBootcamp.swift in Sources */,
 				FE3D224229633162008FFD7D /* MultipleSheetsBootcamp.swift in Sources */,
