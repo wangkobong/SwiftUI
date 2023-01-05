@@ -16,6 +16,7 @@
 		FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */; };
 		FE1AFCE8292D1EAC00DD2866 /* AlertBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */; };
 		FE1AFCEA292E725E00DD2866 /* actionSheetBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */; };
+		FE204DF42966F14400110B28 /* SortFilterMapBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE204DF32966F14400110B28 /* SortFilterMapBootcamp.swift */; };
 		FE22E8F72928CEDB003052F0 /* TernaryBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8F62928CEDB003052F0 /* TernaryBootcamp.swift */; };
 		FE22E8F92928D1B2003052F0 /* AnimationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8F82928D1B2003052F0 /* AnimationBootcamp.swift */; };
 		FE22E8FB2928D6BD003052F0 /* AnimationTimingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8FA2928D6BD003052F0 /* AnimationTimingBootcamp.swift */; };
@@ -57,6 +58,7 @@
 		FE830F1F29647802005AEB9C /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F1E29647802005AEB9C /* tada.mp3 */; };
 		FE830F212964780F005AEB9C /* heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F202964780F005AEB9C /* heartbeat.mp3 */; };
 		FE830F2329647A92005AEB9C /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */; };
+		FE830F252964823D005AEB9C /* HashableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F242964823D005AEB9C /* HashableBootcamp.swift */; };
 		FE85C6E4292BBEDD00ED0934 /* PopoverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E3292BBEDD00ED0934 /* PopoverBootcamp.swift */; };
 		FE85C6E6292BC3C500ED0934 /* NavigationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E5292BC3C500ED0934 /* NavigationBootcamp.swift */; };
 		FE85C6E8292BCA9600ED0934 /* ListBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85C6E7292BCA9600ED0934 /* ListBootcamp.swift */; };
@@ -87,6 +89,7 @@
 		FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp.swift; sourceTree = "<group>"; };
 		FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBootcamp.swift; sourceTree = "<group>"; };
 		FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actionSheetBootcamp.swift; sourceTree = "<group>"; };
+		FE204DF32966F14400110B28 /* SortFilterMapBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFilterMapBootcamp.swift; sourceTree = "<group>"; };
 		FE22E8F62928CEDB003052F0 /* TernaryBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryBootcamp.swift; sourceTree = "<group>"; };
 		FE22E8F82928D1B2003052F0 /* AnimationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationBootcamp.swift; sourceTree = "<group>"; };
 		FE22E8FA2928D6BD003052F0 /* AnimationTimingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTimingBootcamp.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		FE830F1E29647802005AEB9C /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		FE830F202964780F005AEB9C /* heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heartbeat.mp3; sourceTree = "<group>"; };
 		FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
+		FE830F242964823D005AEB9C /* HashableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E3292BBEDD00ED0934 /* PopoverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E5292BC3C500ED0934 /* NavigationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBootcamp.swift; sourceTree = "<group>"; };
 		FE85C6E7292BCA9600ED0934 /* ListBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBootcamp.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */,
 				FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */,
 				FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */,
+				FE830F242964823D005AEB9C /* HashableBootcamp.swift */,
+				FE204DF32966F14400110B28 /* SortFilterMapBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				FE3D22382961BF02008FFD7D /* RotationGestureBootcamp.swift in Sources */,
 				FE60E1902931E907008C07C4 /* SwitchBootcamp.swift in Sources */,
 				FE60E18E2931E631008C07C4 /* TextEditorBootcamp.swift in Sources */,
+				FE204DF42966F14400110B28 /* SortFilterMapBootcamp.swift in Sources */,
 				FE85C6E6292BC3C500ED0934 /* NavigationBootcamp.swift in Sources */,
 				FE6291F4291AA462002C5CD9 /* ScrollViewBootcamp.swift in Sources */,
 				FED95212290ECA6B00F4BFA3 /* ShapesBootcamp.swift in Sources */,
@@ -414,6 +421,7 @@
 				FE85C6E8292BCA9600ED0934 /* ListBootcamp.swift in Sources */,
 				FE3347EB294B68140096EF90 /* OnAppearBootcamp.swift in Sources */,
 				FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */,
+				FE830F252964823D005AEB9C /* HashableBootcamp.swift in Sources */,
 				FEDA830F294A210B000CB884 /* DocumentationBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
