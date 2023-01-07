@@ -54,6 +54,7 @@
 		FE680D9529116DA30072610E /* ImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE680D9429116DA30072610E /* ImageBootcamp.swift */; };
 		FE683C152917E3E700A4B7DF /* StackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE683C142917E3E700A4B7DF /* StackBootcamp.swift */; };
 		FE683C172919412600A4B7DF /* initAndEnumsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */; };
+		FE717C302969B21A004E79D7 /* FetchRequestBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE717C2F2969B21A004E79D7 /* FetchRequestBootcamp.swift */; };
 		FE830F18296473AA005AEB9C /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */; };
 		FE830F1F29647802005AEB9C /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F1E29647802005AEB9C /* tada.mp3 */; };
 		FE830F212964780F005AEB9C /* heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F202964780F005AEB9C /* heartbeat.mp3 */; };
@@ -127,6 +128,7 @@
 		FE680D9429116DA30072610E /* ImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootcamp.swift; sourceTree = "<group>"; };
 		FE683C142917E3E700A4B7DF /* StackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBootcamp.swift; sourceTree = "<group>"; };
 		FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initAndEnumsBootcamp.swift; sourceTree = "<group>"; };
+		FE717C2F2969B21A004E79D7 /* FetchRequestBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestBootcamp.swift; sourceTree = "<group>"; };
 		FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
 		FE830F1E29647802005AEB9C /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		FE830F202964780F005AEB9C /* heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heartbeat.mp3; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				FE830F2229647A92005AEB9C /* LocalNotificationBootcamp.swift */,
 				FE830F242964823D005AEB9C /* HashableBootcamp.swift */,
 				FE204DF32966F14400110B28 /* SortFilterMapBootcamp.swift */,
+				FE717C2F2969B21A004E79D7 /* FetchRequestBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				FEDA830D2948C745000CB884 /* PageTabViewStyleBootcamp.swift in Sources */,
 				FE3347F32950A8420096EF90 /* ViewModelBootcamp.swift in Sources */,
 				FE3D223E296320E8008FFD7D /* ScrollViewReaderBootcamp.swift in Sources */,
+				FE717C302969B21A004E79D7 /* FetchRequestBootcamp.swift in Sources */,
 				FE3D223429619EF7008FFD7D /* LongPressGestureBootcamp.swift in Sources */,
 				FE042956292A69A000F8C11D /* TransitionBootcamp.swift in Sources */,
 				FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */,
