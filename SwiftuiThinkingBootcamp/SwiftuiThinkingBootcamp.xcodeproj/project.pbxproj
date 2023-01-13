@@ -82,6 +82,7 @@
 		FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */; };
 		FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */; };
 		FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */; };
+		FEFCE43329719C1A00C6D26B /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFCE43229719C1A00C6D26B /* WeakSelfBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +162,7 @@
 		FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBootcamp.swift; sourceTree = "<group>"; };
 		FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBootcamp.swift; sourceTree = "<group>"; };
 		FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
+		FEFCE43229719C1A00C6D26B /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */,
 				FE3347F42950B5D80096EF90 /* EnvironmentObjectBootcamp.swift */,
 				FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */,
+				FEFCE43229719C1A00C6D26B /* WeakSelfBootcamp.swift */,
 			);
 			path = SwiftuiThinkingBootcamp;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFCE43329719C1A00C6D26B /* WeakSelfBootcamp.swift in Sources */,
 				FE8740C22922948E00272AA4 /* StateBootcamp.swift in Sources */,
 				FE680D8F291017590072610E /* ColorsBootcamp.swift in Sources */,
 				FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */,
