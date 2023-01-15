@@ -11,6 +11,10 @@ struct WeakSelfBootcamp: View {
     
     @AppStorage("count") var count: Int?
     
+    init() {
+        count = 0
+    }
+    
     var body: some View {
         NavigationView {
             NavigationLink("Navigate", destination: WeakSelfSecondScreen())
@@ -48,20 +52,23 @@ class WeakSelfSecondScreenViewModel: ObservableObject {
     @Published var data: String? = nil
     
     init() {
-        print("INIT NOW")
+        print("INIT NOW SecondView")
         let currentCount = UserDefaults.standard.integer(forKey: "count")
         UserDefaults.standard.set(currentCount + 1, forKey: "count")
         getData()
     }
     
     deinit {
-        print("DEINIT!!!")
+        print("DEINIT!!! SecondView")
         let currentCount = UserDefaults.standard.integer(forKey: "count")
         UserDefaults.standard.set(currentCount - 1, forKey: "count")
     }
     
     func getData() {
-        data = "NEW DATA!!"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 500) { [weak self] in
+            self?.data = "NEW DATA!!"
+        }
+        
     }
 }
 
