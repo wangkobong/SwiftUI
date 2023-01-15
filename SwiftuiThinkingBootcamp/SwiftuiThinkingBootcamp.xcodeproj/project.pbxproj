@@ -31,6 +31,7 @@
 		FE3347F7295209100096EF90 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */; };
 		FE34A93929743C3500269054 /* TypealiasBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93829743C3500269054 /* TypealiasBootcamp.swift */; };
 		FE34A93B2974434300269054 /* EscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93A2974434300269054 /* EscapingBootcamp.swift */; };
+		FE34A93D2974493200269054 /* CodableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93C2974493200269054 /* CodableBootcamp.swift */; };
 		FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */; };
 		FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */; };
 		FE3D223429619EF7008FFD7D /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */; };
@@ -113,6 +114,7 @@
 		FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
 		FE34A93829743C3500269054 /* TypealiasBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasBootcamp.swift; sourceTree = "<group>"; };
 		FE34A93A2974434300269054 /* EscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingBootcamp.swift; sourceTree = "<group>"; };
+		FE34A93C2974493200269054 /* CodableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewBootcamp.swift; sourceTree = "<group>"; };
 		FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				FE1F1678296C60DD00AFA257 /* CoreDataContainer.xcdatamodeld */,
 				FEBB72F5296EDCAE009A64B9 /* ThreadsAndQueuesBootcamp.swift */,
 				FE34A93A2974434300269054 /* EscapingBootcamp.swift */,
+				FE34A93C2974493200269054 /* CodableBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				FE8740C029228D6C00272AA4 /* ButtonBootcamp.swift in Sources */,
 				FE3D223A2961C09C008FFD7D /* DragGestureBootcampBootcamp.swift in Sources */,
 				FEDC9C9C296B10740080BF52 /* FruitsContainer.xcdatamodeld in Sources */,
+				FE34A93D2974493200269054 /* CodableBootcamp.swift in Sources */,
 				FE1F167A296C60DD00AFA257 /* CoreDataContainer.xcdatamodeld in Sources */,
 				FE99CD5E2926837900F8538B /* ConditionalBoomcamp.swift in Sources */,
 				FE042958292A6ED300F8C11D /* SheetBootcamp.swift in Sources */,
