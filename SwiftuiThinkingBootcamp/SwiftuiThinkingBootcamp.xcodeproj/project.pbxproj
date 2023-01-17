@@ -33,6 +33,7 @@
 		FE34A93B2974434300269054 /* EscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93A2974434300269054 /* EscapingBootcamp.swift */; };
 		FE34A93D2974493200269054 /* CodableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93C2974493200269054 /* CodableBootcamp.swift */; };
 		FE34A93F297598EE00269054 /* DownloadJSONWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A93E297598EE00269054 /* DownloadJSONWithEscapingBootcamp.swift */; };
+		FE34A9412976EF9E00269054 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE34A9402976EF9E00269054 /* DownloadWithCombine.swift */; };
 		FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */; };
 		FE3650A92923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */; };
 		FE3D223429619EF7008FFD7D /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */; };
@@ -117,6 +118,7 @@
 		FE34A93A2974434300269054 /* EscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingBootcamp.swift; sourceTree = "<group>"; };
 		FE34A93C2974493200269054 /* CodableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBootcamp.swift; sourceTree = "<group>"; };
 		FE34A93E297598EE00269054 /* DownloadJSONWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSONWithEscapingBootcamp.swift; sourceTree = "<group>"; };
+		FE34A9402976EF9E00269054 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		FE3650A62923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionBootcamp.swift; sourceTree = "<group>"; };
 		FE3650A82923E3D400D3EAA4 /* ExtractSubviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewBootcamp.swift; sourceTree = "<group>"; };
 		FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				FE34A93A2974434300269054 /* EscapingBootcamp.swift */,
 				FE34A93C2974493200269054 /* CodableBootcamp.swift */,
 				FE34A93E297598EE00269054 /* DownloadJSONWithEscapingBootcamp.swift */,
+				FE34A9402976EF9E00269054 /* DownloadWithCombine.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				FE1AFCEA292E725E00DD2866 /* actionSheetBootcamp.swift in Sources */,
 				FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */,
 				FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */,
+				FE34A9412976EF9E00269054 /* DownloadWithCombine.swift in Sources */,
 				FE22E8FB2928D6BD003052F0 /* AnimationTimingBootcamp.swift in Sources */,
 				FE6291F2291A9F9F002C5CD9 /* ForEachBootcamp.swift in Sources */,
 				FE34A93F297598EE00269054 /* DownloadJSONWithEscapingBootcamp.swift in Sources */,
