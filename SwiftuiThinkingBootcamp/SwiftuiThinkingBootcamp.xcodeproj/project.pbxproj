@@ -63,6 +63,7 @@
 		FE683C172919412600A4B7DF /* initAndEnumsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */; };
 		FE6C4F2629783E130028935F /* TimerOnReceiveBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6C4F2529783E130028935F /* TimerOnReceiveBootcamp.swift */; };
 		FE6C4F28297846090028935F /* PublisherAndSubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6C4F27297846090028935F /* PublisherAndSubscriberBootcamp.swift */; };
+		FE6C4F2A2979664E0028935F /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6C4F292979664E0028935F /* FileManagerBootcamp.swift */; };
 		FE717C302969B21A004E79D7 /* FetchRequestBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE717C2F2969B21A004E79D7 /* FetchRequestBootcamp.swift */; };
 		FE830F18296473AA005AEB9C /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */; };
 		FE830F1F29647802005AEB9C /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE830F1E29647802005AEB9C /* tada.mp3 */; };
@@ -150,6 +151,7 @@
 		FE683C162919412600A4B7DF /* initAndEnumsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initAndEnumsBootcamp.swift; sourceTree = "<group>"; };
 		FE6C4F2529783E130028935F /* TimerOnReceiveBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerOnReceiveBootcamp.swift; sourceTree = "<group>"; };
 		FE6C4F27297846090028935F /* PublisherAndSubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherAndSubscriberBootcamp.swift; sourceTree = "<group>"; };
+		FE6C4F292979664E0028935F /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 		FE717C2F2969B21A004E79D7 /* FetchRequestBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestBootcamp.swift; sourceTree = "<group>"; };
 		FE830F17296473AA005AEB9C /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
 		FE830F1E29647802005AEB9C /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				FE34A9402976EF9E00269054 /* DownloadWithCombine.swift */,
 				FE6C4F2529783E130028935F /* TimerOnReceiveBootcamp.swift */,
 				FE6C4F27297846090028935F /* PublisherAndSubscriberBootcamp.swift */,
+				FE6C4F292979664E0028935F /* FileManagerBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				FE830F2329647A92005AEB9C /* LocalNotificationBootcamp.swift in Sources */,
 				FE1AFCEA292E725E00DD2866 /* actionSheetBootcamp.swift in Sources */,
 				FE5FC7BE29335B4300312C29 /* PickerBootcamp.swift in Sources */,
+				FE6C4F2A2979664E0028935F /* FileManagerBootcamp.swift in Sources */,
 				FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */,
 				FE34A9412976EF9E00269054 /* DownloadWithCombine.swift in Sources */,
 				FE22E8FB2928D6BD003052F0 /* AnimationTimingBootcamp.swift in Sources */,
