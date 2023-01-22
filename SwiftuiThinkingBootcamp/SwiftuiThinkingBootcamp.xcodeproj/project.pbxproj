@@ -14,6 +14,7 @@
 		FE0EC4B3290D597A00E5E677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0EC4B2290D597A00E5E677 /* Assets.xcassets */; };
 		FE0EC4B6290D597A00E5E677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0EC4B5290D597A00E5E677 /* Preview Assets.xcassets */; };
 		FE0EC4BD290D5A2500E5E677 /* TextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */; };
+		FE185FCB297D855200FB8589 /* NSCacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE185FCA297D855200FB8589 /* NSCacheBootcamp.swift */; };
 		FE1AFCE8292D1EAC00DD2866 /* AlertBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */; };
 		FE1AFCEA292E725E00DD2866 /* actionSheetBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */; };
 		FE1F1677296C5F9E00AFA257 /* CoreDataRelationshiptBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F1676296C5F9E00AFA257 /* CoreDataRelationshiptBootcamp.swift */; };
@@ -102,6 +103,7 @@
 		FE0EC4B2290D597A00E5E677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0EC4B5290D597A00E5E677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE0EC4BC290D5A2500E5E677 /* TextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp.swift; sourceTree = "<group>"; };
+		FE185FCA297D855200FB8589 /* NSCacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheBootcamp.swift; sourceTree = "<group>"; };
 		FE1AFCE7292D1EAC00DD2866 /* AlertBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBootcamp.swift; sourceTree = "<group>"; };
 		FE1AFCE9292E725E00DD2866 /* actionSheetBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actionSheetBootcamp.swift; sourceTree = "<group>"; };
 		FE1F1676296C5F9E00AFA257 /* CoreDataRelationshiptBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshiptBootcamp.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				FE6C4F2529783E130028935F /* TimerOnReceiveBootcamp.swift */,
 				FE6C4F27297846090028935F /* PublisherAndSubscriberBootcamp.swift */,
 				FE6C4F292979664E0028935F /* FileManagerBootcamp.swift */,
+				FE185FCA297D855200FB8589 /* NSCacheBootcamp.swift */,
 			);
 			path = "Continued Learning";
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				FE34A93B2974434300269054 /* EscapingBootcamp.swift in Sources */,
 				FE717C302969B21A004E79D7 /* FetchRequestBootcamp.swift in Sources */,
 				FE3D223429619EF7008FFD7D /* LongPressGestureBootcamp.swift in Sources */,
+				FE185FCB297D855200FB8589 /* NSCacheBootcamp.swift in Sources */,
 				FE042956292A69A000F8C11D /* TransitionBootcamp.swift in Sources */,
 				FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */,
 				FE680D9129101B240072610E /* GradientBootcamp.swift in Sources */,
