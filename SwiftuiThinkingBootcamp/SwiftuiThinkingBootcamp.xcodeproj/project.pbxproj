@@ -23,6 +23,7 @@
 		FE22E8F72928CEDB003052F0 /* TernaryBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8F62928CEDB003052F0 /* TernaryBootcamp.swift */; };
 		FE22E8F92928D1B2003052F0 /* AnimationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8F82928D1B2003052F0 /* AnimationBootcamp.swift */; };
 		FE22E8FB2928D6BD003052F0 /* AnimationTimingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22E8FA2928D6BD003052F0 /* AnimationTimingBootcamp.swift */; };
+		FE2AD7FA297ECE2B003565B8 /* DownloadingImagesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2AD7F9297ECE2B003565B8 /* DownloadingImagesBootcamp.swift */; };
 		FE3347EB294B68140096EF90 /* OnAppearBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347EA294B68140096EF90 /* OnAppearBootcamp.swift */; };
 		FE3347ED294B6E2E0096EF90 /* IfLetGuardBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347EC294B6E2E0096EF90 /* IfLetGuardBootcamp.swift */; };
 		FE3347EF294B73470096EF90 /* TabGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3347EE294B73470096EF90 /* TabGestureBootcamp.swift */; };
@@ -112,6 +113,7 @@
 		FE22E8F62928CEDB003052F0 /* TernaryBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryBootcamp.swift; sourceTree = "<group>"; };
 		FE22E8F82928D1B2003052F0 /* AnimationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationBootcamp.swift; sourceTree = "<group>"; };
 		FE22E8FA2928D6BD003052F0 /* AnimationTimingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTimingBootcamp.swift; sourceTree = "<group>"; };
+		FE2AD7F9297ECE2B003565B8 /* DownloadingImagesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesBootcamp.swift; sourceTree = "<group>"; };
 		FE3347EA294B68140096EF90 /* OnAppearBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearBootcamp.swift; sourceTree = "<group>"; };
 		FE3347EC294B6E2E0096EF90 /* IfLetGuardBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardBootcamp.swift; sourceTree = "<group>"; };
 		FE3347EE294B73470096EF90 /* TabGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGestureBootcamp.swift; sourceTree = "<group>"; };
@@ -280,9 +282,50 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FE2AD7F4297ECDE7003565B8 /* DownloadingImages */ = {
+			isa = PBXGroup;
+			children = (
+				FE2AD7F8297ECE0B003565B8 /* Util */,
+				FE2AD7F7297ECDFF003565B8 /* ViewModels */,
+				FE2AD7F6297ECDF8003565B8 /* Views */,
+				FE2AD7F5297ECDF2003565B8 /* Models */,
+			);
+			path = DownloadingImages;
+			sourceTree = "<group>";
+		};
+		FE2AD7F5297ECDF2003565B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE2AD7F6297ECDF8003565B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE2AD7F9297ECE2B003565B8 /* DownloadingImagesBootcamp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE2AD7F7297ECDFF003565B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FE2AD7F8297ECE0B003565B8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		FE3D223229619ED8008FFD7D /* Continued Learning */ = {
 			isa = PBXGroup;
 			children = (
+				FE2AD7F4297ECDE7003565B8 /* DownloadingImages */,
 				FE830F19296477BF005AEB9C /* Sounds */,
 				FE3D223329619EF7008FFD7D /* LongPressGestureBootcamp.swift */,
 				FE3D22352961B8C5008FFD7D /* MagnificationGestureBootcamp.swift */,
@@ -483,6 +526,7 @@
 				FE680D9329116A8E0072610E /* IconsBootcamp.swift in Sources */,
 				FE85C6E8292BCA9600ED0934 /* ListBootcamp.swift in Sources */,
 				FE3347EB294B68140096EF90 /* OnAppearBootcamp.swift in Sources */,
+				FE2AD7FA297ECE2B003565B8 /* DownloadingImagesBootcamp.swift in Sources */,
 				FE3650A72923DF8300D3EAA4 /* ExtractedFunctionBootcamp.swift in Sources */,
 				FE830F252964823D005AEB9C /* HashableBootcamp.swift in Sources */,
 				FEDA830F294A210B000CB884 /* DocumentationBootcamp.swift in Sources */,

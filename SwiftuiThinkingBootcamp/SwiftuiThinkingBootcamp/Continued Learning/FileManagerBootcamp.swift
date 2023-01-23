@@ -137,7 +137,7 @@ class FileManagerViewModel: ObservableObject {
     init() {
         //  getImageFromAssetsFolder()
         getImageFromFileManager()
-        print("image: \(image)")
+        //print("image: \(image)")
     }
     
     func getImageFromAssetsFolder() {
