@@ -14,32 +14,26 @@ struct OnboardingStep {
 }
 
 private let onBoardingSteps = [
-    OnboardingStep(title: "안녕하세요", description: "대학생부터 직장인까지! 프로젝트 관리 서비스 TEAMPLAN이에요", imageName: "onboarding_1"),
-    OnboardingStep(title: "편하게", description: "언제 어디서든 팀원들의 진행률을 확인해요", imageName: "onboarding_2"),
-    OnboardingStep(title: "한눈에", description: "공유캘린더를 통해서 팀,개인의 일정을 한눈에 확인해요", imageName: "onboarding_3"),
-    OnboardingStep(title: "성장하는", description: "상호간의 간단한 피드백을 통해 프로젝트를 마무리하며 개인의 능력을 성장시켜요", imageName: "onboarding_4"),
+    OnboardingStep(title: "안녕하세요", description: "대학생부터 직장인까지! \n프로젝트 관리 서비스 TEAMPLAN이에요", imageName: "onboarding_1"),
+    OnboardingStep(title: "편하게", description: "언제 어디서든 \n팀원들의 진행률을 확인해요", imageName: "onboarding_2"),
+    OnboardingStep(title: "한눈에", description: "공유캘린더를 통해서 \n팀,개인의 일정을 한눈에 확인해요", imageName: "onboarding_3"),
+    OnboardingStep(title: "성장하는", description: "상호간의 간단한 피드백을 통해 \n프로젝트를 마무리하며 \n개인의 능력을 성장시켜요", imageName: "onboarding_4"),
 ]
 
 struct OnboardingView: View {
     
-    // Onboarding states:
-    /*
-     0 - 안녕하세요
-     1 - 편하게
-     2 - 한눈에
-     3 - 성장하는 + 버튼 활성화
-     */
-    
     @State private var onboardingState: Int = 0
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
+    init() {
+        UIScrollView.appearance().bounces = false
+    }
+    
     var body: some View {
-        
         VStack {
-            SkipButton()
-            
+            skipButton
             TabView(selection: $onboardingState) {
-                ForEach(0..<onBoardingSteps.count) { index in
+                ForEach(0..<onBoardingSteps.count, id: \.self) { index in
                     VStack {
                         Text(onBoardingSteps[index].title)
                             .font(.title)
@@ -50,55 +44,22 @@ struct OnboardingView: View {
                         Text(onBoardingSteps[index].description)
                             .font(.headline)
                             .fontWeight(.heavy)
+                            .multilineTextAlignment(.center)
                             .padding(.horizontal, 32)
+                            .lineLimit(index == 3 ? 3 : 2)
                         
                         Image(onBoardingSteps[index].imageName)
-                        
+                            .frame(height: 337)
                     }
                     .tag(index)
-                    .background(Color.red)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            
-            
-//            Text("안녕하세요")
-//                .font(.title)
-//                .fontWeight(.bold)
-//                .foregroundColor(.purple)
-//                .padding(.bottom)
-//
-//            VStack {
-//                Text("대학생부터 직장인까지!")
-//                    .font(.headline)
-//                    .fontWeight(.heavy)
-//                Text("프로젝트 관리 서비스 TEAMPLAN이에요")
-//                    .font(.headline)
-//
-//            }
-//
-//            Image("onboarding_1")
+            pageControl
             Spacer()
-            
             bottomButton
 
-
-        }
-//        ZStack {
-//            switch onboardingState {
-//            case 0:
-//                break
-//            case 1:
-//                break
-//            case 2:
-//                break
-//            case 3:
-//                break
-//            default:
-//                RoundedRectangle(cornerRadius: 25)
-//                    .foregroundColor(.green)
-//            }
-//        }
+        } //: VSTACK
     }
 }
 
@@ -116,42 +77,65 @@ extension OnboardingView {
         Button {
             
         } label: {
-            Text("시작하기")
+            Text(onboardingState == 3 ? "TEAMPLAN 시작하기" : "시작하기")
                 .font(.headline)
-                .foregroundColor(.gray)
-                .frame(height: 55)
+                .foregroundColor(onboardingState == 3 ? .white : .gray)
+                .frame(height: 48)
                 .frame(maxWidth: .infinity)
-                .background(.white)
+                .background(onboardingState == 3 ? .purple : .white)
                 .cornerRadius(10)
-                .overlay(
+                .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(.gray, lineWidth: 1)
-                        .padding(.leading)
-                        .padding(.trailing)
+                        .stroke(.gray, lineWidth: onboardingState == 3 ? 0 : 1)
                 )
+                .padding(.horizontal)
+                .shadow(radius: onboardingState == 3 ? 0 : 10)
         }
 
     }
     
-    private var firstSection: some View {
-        VStack {
-            
+    private var pageControl: some View {
+        HStack(spacing: 15) {
+            ForEach(0..<onBoardingSteps.count, id: \.self) { index in
+                if index == onboardingState {
+                    Rectangle()
+                        .frame(width: 30, height: 10)
+                        .cornerRadius(10)
+                        .foregroundColor(.blue)
+                } else {
+                    Circle()
+                        .frame(width: 10, height: 10)
+                        .foregroundColor(.gray)
+                }
+            }
         }
+        .padding(.bottom, 24)
     }
-}
-
-struct SkipButton: View {
-    var body: some View {
+    
+    private var skipButton: some View {
         HStack {
+            if onboardingState > 0 {
+                Button {
+                    withAnimation(.spring()) {
+                        onboardingState -= 1
+                    }
+                } label: {
+                    Image(systemName: "chevron.backward")
+                        .padding(.leading)
+                        .foregroundColor(.gray)
+                }
+            }
             Spacer()
             Button {
-                
+                withAnimation(.spring()) {
+                    onboardingState = 3
+                }
             } label: {
                 Text("건너뛰기")
-                   
             }
             .padding(.trailing)
             .foregroundColor(.gray)
         }
     }
 }
+
