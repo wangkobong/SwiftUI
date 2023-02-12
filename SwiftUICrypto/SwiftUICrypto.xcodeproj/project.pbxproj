@@ -20,6 +20,7 @@
 		FE2193E429953A9A0040529D /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2193E329953A9A0040529D /* Double+Extension.swift */; };
 		FE2193E6299544220040529D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2193E5299544220040529D /* HomeViewModel.swift */; };
 		FE5B401C299937AE00284F7E /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B401B299937AE00284F7E /* CoinDataService.swift */; };
+		FE5B401F2999425A00284F7E /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B401E2999425A00284F7E /* NetworkingManager.swift */; };
 		FEB9537F2993E46600EED741 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9537E2993E46600EED741 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		FE2193E329953A9A0040529D /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		FE2193E5299544220040529D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FE5B401B299937AE00284F7E /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		FE5B401E2999425A00284F7E /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		FEB9537E2993E46600EED741 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 		FE176517299149AE00CC2B11 /* SwiftUICrypto */ = {
 			isa = PBXGroup;
 			children = (
+				FE5B401D2999423300284F7E /* Utilities */,
 				FE17653229914CD800CC2B11 /* Extenstions */,
 				FE5B401A2999377D00284F7E /* Services */,
 				FEB9537D2993E44200EED741 /* Models */,
@@ -161,6 +164,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FE5B401D2999423300284F7E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FE5B401E2999425A00284F7E /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FEB9537D2993E44200EED741 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +258,7 @@
 				FE17651B299149AE00CC2B11 /* ContentView.swift in Sources */,
 				FE17653E29929B8200CC2B11 /* CircleButtonView.swift in Sources */,
 				FE176519299149AE00CC2B11 /* SwiftUICryptoApp.swift in Sources */,
+				FE5B401F2999425A00284F7E /* NetworkingManager.swift in Sources */,
 				FE17654029929FA000CC2B11 /* CircleButtonAnimationView.swift in Sources */,
 				FE2193E2299535EB0040529D /* PreviewProvider.swift in Sources */,
 				FE2193E429953A9A0040529D /* Double+Extension.swift in Sources */,
