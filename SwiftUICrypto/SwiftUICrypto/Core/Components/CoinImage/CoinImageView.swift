@@ -25,7 +25,7 @@ struct CoinImageView: View {
             } else if viewModel.isLoading {
                 ProgressView()
             } else {
-                Image(systemName: "questingmark")
+                Image(systemName: "questionmark")
                     .foregroundColor(.theme.secondaryText)
             }
         }

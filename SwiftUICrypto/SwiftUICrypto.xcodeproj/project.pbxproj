@@ -25,6 +25,7 @@
 		FE5B40242999496300284F7E /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B40232999496300284F7E /* CoinImageService.swift */; };
 		FE5B402629994B7E00284F7E /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B402529994B7E00284F7E /* CoinImageViewModel.swift */; };
 		FEB9537F2993E46600EED741 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9537E2993E46600EED741 /* CoinModel.swift */; };
+		FEBADA50299A85DD0028DB0C /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		FE5B40232999496300284F7E /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		FE5B402529994B7E00284F7E /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		FEB9537E2993E46600EED741 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				FE5B401E2999425A00284F7E /* NetworkingManager.swift */,
+				FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				FE2193E02995358D0040529D /* CoinRowView.swift in Sources */,
 				FE2193E6299544220040529D /* HomeViewModel.swift in Sources */,
 				FE17653429914CF100CC2B11 /* Color+Extenstion.swift in Sources */,
+				FEBADA50299A85DD0028DB0C /* LocalFileManager.swift in Sources */,
 				FE17653A29929A4700CC2B11 /* HomeView.swift in Sources */,
 				FE5B4022299947D400284F7E /* CoinImageView.swift in Sources */,
 				FE17651B299149AE00CC2B11 /* ContentView.swift in Sources */,
