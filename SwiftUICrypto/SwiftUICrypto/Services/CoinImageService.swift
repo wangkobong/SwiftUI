@@ -22,7 +22,7 @@ class CoinImageService {
     init(coin: CoinModel) {
         self.coin = coin
         self.imageName = coin.id
-        getCoinImage()
+        getCoinImage() 
     }
     
     private func getCoinImage() {
