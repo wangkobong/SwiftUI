@@ -12,6 +12,7 @@ struct TeamPlanApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var showLaunchView: Bool = true
     
+    
     var body: some Scene {
         WindowGroup {
             ZStack {
