@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE155F2C29AB8BF6008E0A43 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE155F2B29AB8BF6008E0A43 /* HapticManager.swift */; };
 		FE176519299149AE00CC2B11 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE176518299149AE00CC2B11 /* SwiftUICryptoApp.swift */; };
 		FE17651B299149AE00CC2B11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17651A299149AE00CC2B11 /* ContentView.swift */; };
 		FE17651D299149B000CC2B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE17651C299149B000CC2B11 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE155F2B29AB8BF6008E0A43 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		FE176515299149AE00CC2B11 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE176518299149AE00CC2B11 /* SwiftUICryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICryptoApp.swift; sourceTree = "<group>"; };
 		FE17651A299149AE00CC2B11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				FE5B401E2999425A00284F7E /* NetworkingManager.swift */,
 				FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */,
+				FE155F2B29AB8BF6008E0A43 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				FE17651B299149AE00CC2B11 /* ContentView.swift in Sources */,
 				FE17653E29929B8200CC2B11 /* CircleButtonView.swift in Sources */,
 				FE176519299149AE00CC2B11 /* SwiftUICryptoApp.swift in Sources */,
+				FE155F2C29AB8BF6008E0A43 /* HapticManager.swift in Sources */,
 				FEBADA52299A8CF70028DB0C /* SearchBarView.swift in Sources */,
 				FE5B401F2999425A00284F7E /* NetworkingManager.swift in Sources */,
 				FE31F90229A3C3EA00CEC99D /* CoinLogoView.swift in Sources */,
