@@ -1,0 +1,28 @@
+//
+//  DetailView.swift
+//  SwiftUICrypto
+//
+//  Created by sungyeon kim on 2023/02/26.
+//
+
+import SwiftUI
+
+struct DetailView: View {
+    
+    @Binding var coin: CoinModel?
+    
+    init(coin: Binding<CoinModel?>) {
+        self._coin = coin
+        print("Init Detail View for \(coin.wrappedValue?.name)")
+    }
+    
+    var body: some View {
+        Text(coin?.name ?? "")
+    }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(coin: .constant(dev.coin))
+    }
+}
