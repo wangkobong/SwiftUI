@@ -15,6 +15,11 @@
 		FE7BDFC5298F99810058A358 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFC4298F99810058A358 /* LaunchScreenView.swift */; };
 		FE7BDFC7298F99ED0058A358 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFC6298F99ED0058A358 /* OnboardingView.swift */; };
 		FE7BDFCB298FA3050058A358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFCA298FA3050058A358 /* AppDelegate.swift */; };
+		FEB5742F29B4574500001CC9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5742E29B4574500001CC9 /* Color+Extension.swift */; };
+		FEB5743129B4575E00001CC9 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5743029B4575E00001CC9 /* Font+Extension.swift */; };
+		FEB5743629B4583300001CC9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5743529B4583300001CC9 /* LoginView.swift */; };
+		FEB5743829B4585300001CC9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5743729B4585300001CC9 /* SplashView.swift */; };
+		FEB5743A29B4586500001CC9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5743929B4586500001CC9 /* IntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		FE7BDFC4298F99810058A358 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		FE7BDFC6298F99ED0058A358 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE7BDFCA298FA3050058A358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEB5742E29B4574500001CC9 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		FEB5743029B4575E00001CC9 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		FEB5743529B4583300001CC9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FEB5743729B4585300001CC9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FEB5743929B4586500001CC9 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,11 @@
 		FE7BDFB3298F90E00058A358 /* TeamPlan */ = {
 			isa = PBXGroup;
 			children = (
-				FE7BDFC9298FA2FC0058A358 /* New Group */,
-				FE7BDFC8298F9C940058A358 /* Launch */,
-				FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */,
+				FEB5742B29B4570400001CC9 /* Core */,
+				FEB5742D29B4573500001CC9 /* Extensions */,
+				FEB5742C29B4570B00001CC9 /* Project */,
+				FE7BDFC9298FA2FC0058A358 /* Utilities */,
 				FE7BDFB6298F90E00058A358 /* ContentView.swift */,
-				FE7BDFC6298F99ED0058A358 /* OnboardingView.swift */,
-				FE7BDFB8298F90E10058A358 /* Assets.xcassets */,
 				FE7BDFBA298F90E10058A358 /* Preview Content */,
 			);
 			path = TeamPlan;
@@ -87,12 +96,66 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		FE7BDFC9298FA2FC0058A358 /* New Group */ = {
+		FE7BDFC9298FA2FC0058A358 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FEB5742B29B4570400001CC9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FEB5743429B4579800001CC9 /* Splash */,
+				FEB5743329B4579100001CC9 /* Login */,
+				FEB5743229B4578600001CC9 /* Onboarding */,
+				FE7BDFC8298F9C940058A358 /* Launch */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FEB5742C29B4570B00001CC9 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BDFB8298F90E10058A358 /* Assets.xcassets */,
+				FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */,
 				FE7BDFCA298FA3050058A358 /* AppDelegate.swift */,
 			);
-			path = "New Group";
+			path = Project;
+			sourceTree = "<group>";
+		};
+		FEB5742D29B4573500001CC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEB5742E29B4574500001CC9 /* Color+Extension.swift */,
+				FEB5743029B4575E00001CC9 /* Font+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEB5743229B4578600001CC9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BDFC6298F99ED0058A358 /* OnboardingView.swift */,
+				FEB5743929B4586500001CC9 /* IntroView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FEB5743329B4579100001CC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FEB5743529B4583300001CC9 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FEB5743429B4579800001CC9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FEB5743729B4585300001CC9 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE7BDFB7298F90E00058A358 /* ContentView.swift in Sources */,
+				FEB5742F29B4574500001CC9 /* Color+Extension.swift in Sources */,
 				FE7BDFC7298F99ED0058A358 /* OnboardingView.swift in Sources */,
 				FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */,
 				FE7BDFCB298FA3050058A358 /* AppDelegate.swift in Sources */,
+				FEB5743129B4575E00001CC9 /* Font+Extension.swift in Sources */,
+				FEB5743629B4583300001CC9 /* LoginView.swift in Sources */,
+				FEB5743A29B4586500001CC9 /* IntroView.swift in Sources */,
 				FE7BDFC5298F99810058A358 /* LaunchScreenView.swift in Sources */,
+				FEB5743829B4585300001CC9 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
