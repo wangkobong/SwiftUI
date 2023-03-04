@@ -9,16 +9,39 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Image("loginView")
-                    .padding(.trailing, 51)
-                    .padding(.leading, 16)
+        NavigationView {
+            VStack {
+                HStack {
+                    Image("loginView")
+                        .padding(.trailing, 51)
+                        .padding(.leading, 16)
+                }
+                Spacer()
+                    .frame(height: 100)
+                NavigationLink {
+                    TermsView()
+                } label: {
+                    HStack {
+                        Image("appleLogo")
+                        Spacer()
+                        Text("Apple로 계속하기")
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .frame(height: 48)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.theme.blackColor)
+                    .background(
+                        RoundedRectangle(cornerRadius: 4)
+                            .stroke(SwiftUI.Color.theme.blackColor, lineWidth: 1)
+                    )
+                }
+                .padding(.horizontal, 55)
+
+
+                
+//                LoginButtonsView()
             }
-            Spacer()
-                .frame(height: 100)
-            
-            LoginButtonsView()
         }
     }
 }

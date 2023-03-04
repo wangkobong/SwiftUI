@@ -11,19 +11,19 @@ import SwiftUI
 struct teamplanApp: App {
     
     @State private var showIntroView: Bool = true
+    @State private var termsViewModel = TermsViewModel()
     
     var body: some Scene {
         WindowGroup {
             ZStack {
-                ZStack {
-                    if showIntroView {
-                        SplashView(showIntroView: $showIntroView)
-                            .transition(.move(edge: .leading))
-                    } else {
-                        IntroView()
-                    }
+                if showIntroView {
+                    SplashView(showIntroView: $showIntroView)
+                        .transition(.move(edge: .leading))
+                } else {
+                    IntroView()
                 }
             }
+            .environmentObject(termsViewModel)
         }
     }
 }
