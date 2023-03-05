@@ -67,15 +67,18 @@ extension TermsView {
     
     private var termsList: some View {
         VStack {
-            TermsDetailView(terms: TermsModel(title: "전체동의", isSelected: false, isWhole: true, isNecessary: true))
+            TermsDetailView(terms: TermsModel(title: "전체동의", isSelected: false, isWhole: true, isNecessary: true), isChecked: $termsViewModel.isChecked, isCheckedWholeButton: $termsViewModel.isClickedWholeButton)
             
             Divider()
                 .padding(.horizontal, 16)
                 .padding(.bottom, 10)
             
             ForEach(termsViewModel.termsList) { terms in
-                TermsDetailView(terms: terms)
+                TermsDetailView(terms: terms, isChecked: $termsViewModel.isChecked, isCheckedWholeButton: $termsViewModel.isClickedWholeButton)
+                Spacer()
+                    .frame(height: 15)
             }
+
         }
     }
 }

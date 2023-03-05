@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct TermsModel: Identifiable {
+struct TermsModel: Identifiable, Hashable {
     let id = UUID().uuidString
     let title: String
-    let isSelected: Bool
+    var isSelected: Bool
     var isWhole: Bool = false
     let isNecessary: Bool
 }

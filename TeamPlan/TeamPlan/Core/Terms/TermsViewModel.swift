@@ -11,9 +11,10 @@ import Combine
 final class TermsViewModel: ObservableObject {
     
     @Published var termsList: [TermsModel] = []
-    
+    @Published var isClickedWholeButton: Bool = false
+    @Published var isChecked: Bool = false
+
     private let termsDataService = TermsDataService()
-    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -24,6 +25,12 @@ final class TermsViewModel: ObservableObject {
         termsDataService.$termsList
             .sink { [weak self] termsList in
                 self?.termsList = termsList
+            }
+            .store(in: &cancellables)
+        
+        $isChecked
+            .sink { isClicked in
+                print(isClicked)
             }
             .store(in: &cancellables)
     }

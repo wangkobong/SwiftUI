@@ -9,15 +9,19 @@ import SwiftUI
 
 struct TermsDetailView: View {
     
-    let terms: TermsModel
+    var terms: TermsModel
+    private let viewModel = TermsViewModel()
+    @Binding var isChecked: Bool
+    @Binding var isCheckedWholeButton: Bool
     
     var body: some View {
         VStack {
             HStack {
                 Button {
-                    
+                    isChecked.toggle()
+                    print(terms.id)
                 } label: {
-                    Image("Check")
+                    Image(systemName: isChecked ? "heart.fill" : "heart")
                 }
 
                 Text(terms.title)
@@ -38,7 +42,7 @@ struct TermsDetailView: View {
 
 struct TermsDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TermsDetailView(terms: TermsModel(title: "서비스 이용약관 동의", isSelected: false, isNecessary: true))
+        TermsDetailView(terms: TermsModel(title: "서비스 이용약관 동의", isSelected: false, isNecessary: true), isChecked: .constant(false), isCheckedWholeButton: .constant(false))
             //.previewLayout(.sizeThatFits)
     }
 }
