@@ -41,43 +41,21 @@ struct DetailView: View {
                 Text("")
                     .frame(height: 150)
                 
-                Text("OverView")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                overviewTitle
                 Divider()
-                
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: nil,
-                    pinnedViews: []) {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: StatisticModel(title: "Title", value: "value"))
-                        }
-                    }
-                
-                Text("Additional Details")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                overviewGrid
+                additionalTitle
                 Divider()
-                
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: nil,
-                    pinnedViews: []) {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: StatisticModel(title: "Title", value: "value"))
-                        }
-                    }
+                additionalGrid
             }
             .padding()
         }
         .navigationTitle(viewModel.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItems
+            }
+        }
     }
 }
 
@@ -85,6 +63,59 @@ struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             DetailView(coin: dev.coin)
+        }
+    }
+}
+
+extension DetailView {
+    
+    private var overviewTitle: some View {
+        Text("OverView")
+            .font(.title)
+            .bold()
+            .foregroundColor(.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var additionalTitle: some View {
+        Text("Additional Details")
+            .font(.title)
+            .bold()
+            .foregroundColor(.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var overviewGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: nil,
+            pinnedViews: []) {
+                ForEach(viewModel.overviewStatistics) { stat in
+                    StatisticView(stat: stat)
+                }
+            }
+    }
+    
+    private var additionalGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: nil,
+            pinnedViews: []) {
+                ForEach(viewModel.additionalStatistics) { stat in
+                    StatisticView(stat: stat)
+                }
+            }
+    }
+    
+    private var navigationBarTrailingItems: some View {
+        HStack {
+            Text(viewModel.coin.symbol.uppercased())
+                .font(.headline)
+            .foregroundColor(.theme.secondaryText)
+            CoinImageView(coin: viewModel.coin)
+                .frame(width: 25, height: 25)
         }
     }
 }
