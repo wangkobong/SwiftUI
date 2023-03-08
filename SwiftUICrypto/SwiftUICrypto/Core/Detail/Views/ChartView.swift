@@ -12,11 +12,15 @@ struct ChartView: View {
     let data: [Double]
     let maxY: Double
     let minY: Double
+    let lineColor: Color
     
     init(coin: CoinModel) {
         data = coin.sparklineIn7D?.price ?? []
         maxY = data.max() ?? 0
         minY = data.min() ?? 0
+        
+        let priceChange = (data.last ?? 0) - (data.first ?? 0)
+        lineColor = priceChange > 0 ? .theme.green : .theme.red
     }
     
     // 300
@@ -40,16 +44,16 @@ struct ChartView: View {
                     let xPosition = geometry.size.width / CGFloat(data.count) * CGFloat(index + 1)
                     
                     let yAxis = maxY - minY
-                    let yPosition = CGFloat((data[index] - minY) / yAxis * geometry.size.height)
+                    let yPosition = (1 - CGFloat((data[index] - minY) / yAxis)) * geometry.size.height
                     
                     if index == 0 {
-                        path.move(to: CGPoint(x: 0, y: 0))
+                        path.move(to: CGPoint(x: xPosition, y: yPosition))
                     }
                     
                     path.addLine(to: CGPoint(x: xPosition, y: yPosition))
                 }
             }
-            .stroke(Color.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+            .stroke(lineColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
         }
     }
 }
