@@ -44,6 +44,7 @@
 		FEBADA50299A85DD0028DB0C /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */; };
 		FEBADA52299A8CF70028DB0C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBADA51299A8CF70028DB0C /* SearchBarView.swift */; };
 		FEBADA54299A91190028DB0C /* UIApllication+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBADA53299A91190028DB0C /* UIApllication+Extenstion.swift */; };
+		FECBCDFE29C0C034009A3291 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBCDFD29C0C034009A3291 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		FEBADA4F299A85DD0028DB0C /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		FEBADA51299A8CF70028DB0C /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		FEBADA53299A91190028DB0C /* UIApllication+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApllication+Extenstion.swift"; sourceTree = "<group>"; };
+		FECBCDFD29C0C034009A3291 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				FE2193E1299535EB0040529D /* PreviewProvider.swift */,
 				FE2193E329953A9A0040529D /* Double+Extension.swift */,
 				FEBADA53299A91190028DB0C /* UIApllication+Extenstion.swift */,
+				FECBCDFD29C0C034009A3291 /* Date+Extension.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				FE2193E02995358D0040529D /* CoinRowView.swift in Sources */,
 				FE31F90029A3C06C00CEC99D /* XMarkButton.swift in Sources */,
 				FE2193E6299544220040529D /* HomeViewModel.swift in Sources */,
+				FECBCDFE29C0C034009A3291 /* Date+Extension.swift in Sources */,
 				FE17653429914CF100CC2B11 /* Color+Extenstion.swift in Sources */,
 				FEBADA50299A85DD0028DB0C /* LocalFileManager.swift in Sources */,
 				FE233358299D2CD100475FED /* MarketDataModel.swift in Sources */,
