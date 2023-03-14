@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1F67A029D0941A0039776B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F679F29D0941A0039776B /* SignupView.swift */; };
 		FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */; };
 		FE7BDFB7298F90E00058A358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB6298F90E00058A358 /* ContentView.swift */; };
 		FE7BDFB9298F90E10058A358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7BDFB8298F90E10058A358 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE1F679F29D0941A0039776B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		FE7BDFB1298F90E00058A358 /* TeamPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlanApp.swift; sourceTree = "<group>"; };
 		FE7BDFB6298F90E00058A358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE1F679E29D094050039776B /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				FE1F679F29D0941A0039776B /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		FE7BDFA8298F90E00058A358 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		FEB5742B29B4570400001CC9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FE1F679E29D094050039776B /* Signup */,
 				FEDA9CF329B49A6C00BD7924 /* Components */,
 				FEB5743429B4579800001CC9 /* Splash */,
 				FEDA9CEE29B491E000BD7924 /* Terms */,
@@ -284,6 +295,7 @@
 				FEB5742F29B4574500001CC9 /* Color+Extension.swift in Sources */,
 				FE7BDFC7298F99ED0058A358 /* OnboardingView.swift in Sources */,
 				FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */,
+				FE1F67A029D0941A0039776B /* SignupView.swift in Sources */,
 				FE7BDFCB298FA3050058A358 /* AppDelegate.swift in Sources */,
 				FEB5743129B4575E00001CC9 /* Font+Extension.swift in Sources */,
 				FEB5743629B4583300001CC9 /* LoginView.swift in Sources */,

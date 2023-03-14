@@ -11,10 +11,12 @@ struct TermsView: View {
     
     @EnvironmentObject private var termsViewModel: TermsViewModel
     @Environment(\.dismiss) var dismiss
+    @State private var showSignup = false
     
     var body: some View {
         NavigationView {
             VStack {
+
                 Spacer()
                     .frame(height: 80)
                 HStack {
@@ -38,6 +40,9 @@ struct TermsView: View {
                     .background(Color.theme.mainPurpleColor)
                     .foregroundColor(.theme.whiteColor)
                     .font(.appleSDGothicNeo(.regular, size: 20))
+                    .onTapGesture {
+                        self.showSignup = true
+                    }
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -49,6 +54,11 @@ struct TermsView: View {
                     }
 
                 }
+            }
+            .navigationDestination(isPresented: $showSignup) {
+                SignupView()
+                Text("")
+                     .hidden()
             }
         }
     }
