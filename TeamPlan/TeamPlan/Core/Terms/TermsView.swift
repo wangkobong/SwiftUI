@@ -16,6 +16,13 @@ struct TermsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                
+                NavigationLink(
+                    destination: SignupView().defaultNavigationMFormatting(),
+                     isActive: $showSignup) {
+                          Text("")
+                               .hidden()
+                     }
 
                 Spacer()
                     .frame(height: 80)
@@ -55,11 +62,12 @@ struct TermsView: View {
 
                 }
             }
-            .navigationDestination(isPresented: $showSignup) {
-                SignupView()
-                Text("")
-                     .hidden()
-            }
+//            .navigationDestination(isPresented: $showSignup) {
+//                SignupView()
+//                    .defaultNavigationMFormatting()
+//                Text("")
+//                     .hidden()
+//            }
         }
     }
 }

@@ -2,7 +2,7 @@
 //  SignupView.swift
 //  TeamPlan
 //
-//  Created by sungyeon kim on 2023/03/26.
+//  Created by sungyeon kim on 2023/03/14.
 //
 
 import SwiftUI

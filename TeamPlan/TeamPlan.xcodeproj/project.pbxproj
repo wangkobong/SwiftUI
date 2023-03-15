@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE1F67A029D0941A0039776B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F679F29D0941A0039776B /* SignupView.swift */; };
+		FE1F67A529D097700039776B /* DefaultNavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F67A429D097700039776B /* DefaultNavigationModifier.swift */; };
 		FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */; };
 		FE7BDFB7298F90E00058A358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB6298F90E00058A358 /* ContentView.swift */; };
 		FE7BDFB9298F90E10058A358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7BDFB8298F90E10058A358 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		FE1F679F29D0941A0039776B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		FE1F67A429D097700039776B /* DefaultNavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationModifier.swift; sourceTree = "<group>"; };
 		FE7BDFB1298F90E00058A358 /* TeamPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlanApp.swift; sourceTree = "<group>"; };
 		FE7BDFB6298F90E00058A358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 				FE1F679F29D0941A0039776B /* SignupView.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		FE1F67A129D0973F0039776B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FE1F67A429D097700039776B /* DefaultNavigationModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		FE7BDFA8298F90E00058A358 = {
@@ -154,6 +164,7 @@
 		FEB5742D29B4573500001CC9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE1F67A129D0973F0039776B /* Modifiers */,
 				FEB5742E29B4574500001CC9 /* Color+Extension.swift */,
 				FEB5743029B4575E00001CC9 /* Font+Extension.swift */,
 				FEDA9D0129B4C7AB00BD7924 /* PreviewProvider.swift */,
@@ -306,6 +317,7 @@
 				FEDA9CFD29B4C4EF00BD7924 /* TermsViewModel.swift in Sources */,
 				FEDA9D0229B4C7AB00BD7924 /* PreviewProvider.swift in Sources */,
 				FEDA9D0029B4C51600BD7924 /* TermsDataService.swift in Sources */,
+				FE1F67A529D097700039776B /* DefaultNavigationModifier.swift in Sources */,
 				FEDA9CF229B496A600BD7924 /* TermsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,8 +20,7 @@ struct LoginView: View {
                     .frame(height: 100)
                 NavigationLink {
                     TermsView()
-                        .navigationBarTitle("", displayMode: .automatic)
-                        .navigationBarHidden(true)
+                        .defaultNavigationMFormatting()
                 } label: {
                     HStack {
                         Image("appleLogo")
