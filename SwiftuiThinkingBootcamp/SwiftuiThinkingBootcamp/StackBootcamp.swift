@@ -78,19 +78,19 @@ struct StackBootcamp: View {
 //            .background(.black)
 //        }
         
-//        HStack(alignment: .center, spacing: 8) {
-//            Rectangle()
-//                .fill(.red)
-//                .frame(width: 200, height: 200)
-//
-//            Rectangle()
-//                .fill(.green)
-//                .frame(width: 150, height: 150)
-//
-//            Rectangle()
-//                .fill(.orange)
-//                .frame(width: 100, height: 100)
-//        }
+        HStack(alignment: .center, spacing: 8) {
+            Rectangle()
+                .fill(.red)
+                .frame(width: 200, height: 200)
+
+            Rectangle()
+                .fill(.green)
+                .frame(width: 150, height: 150)
+
+            Rectangle()
+                .fill(.orange)
+                .frame(width: 100, height: 100)
+        }
 //        VStack() {
 //            Rectangle()
 //                .fill(.red)
