@@ -15,8 +15,8 @@ struct SignupView: View {
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
 
     // onboarding inputs
-    @State var name: String = ""
-    @State var age: Double = 50
+    @State var nickname: String = ""
+    @State var dateOfBirth: String = ""
     @State var gender: String = ""
     
     // for the alert
@@ -33,6 +33,56 @@ struct SignupView: View {
                     .frame(height: 34)
 
                 levelBar
+                
+                VStack {
+                    Text("프로필을 만들어보세요!")
+                        .foregroundColor(Color(hex: "2B2B2B"))
+                        .font(.appleSDGothicNeo(.semiBold, size: 25))
+                    
+                    Spacer()
+                        .frame(height: 81)
+                    
+                    VStack {
+                        HStack {
+                            Text("닉네임")
+                                .font(.appleSDGothicNeo(.regular, size: 18))
+                                .foregroundColor(Color(hex: "4B4B4B"))
+                            Spacer()
+                        }
+                        TextField("닉네임을 입력해 주세요(10자 이내)", text: $nickname)
+                            .padding(.horizontal, 10)
+                        Divider()
+                        
+                        HStack {
+                            Text("이미 사용중인 닉네임이에요🥲")
+                                .font(.appleSDGothicNeo(.regular, size: 16))
+                                .foregroundColor(.theme.warningRedColor)
+                            Spacer()
+                        }
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        HStack {
+                            Text("생년월일")
+                                .font(.appleSDGothicNeo(.regular, size: 16))
+                                .foregroundColor(Color(hex: "4B4B4B"))
+                            Spacer()
+                        }
+                        TextField("0000.00.00", text: $dateOfBirth)
+                            .padding(.horizontal, 10)
+                        Divider()
+                        
+                        HStack {
+                            Text("입력하신 생년월일이 맞나요?🥲")
+                                .font(.appleSDGothicNeo(.regular, size: 18))
+                                .foregroundColor(.theme.warningRedColor)
+                            Spacer()
+                        }
+                    }
+                    .padding(.horizontal, 16)
+
+                }
 
 
                 
