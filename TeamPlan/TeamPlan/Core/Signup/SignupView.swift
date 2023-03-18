@@ -13,6 +13,14 @@ struct SignupView: View {
     @State var signupState: Int = 0
     
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+    
+    let jobs = ["직장인", "대학(원)생", "프리랜서", "기타"]
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
 
     // onboarding inputs
     @State var nickname: String = ""
@@ -37,7 +45,39 @@ struct SignupView: View {
                 Spacer()
                     .frame(height: 42)
                 
-                profileSection
+                VStack {
+                    HStack {
+                        Text("어떤 일을 하시나요?")
+                            .foregroundColor(Color(hex: "2B2B2B"))
+                            .font(.appleSDGothicNeo(.semiBold, size: 25))
+                        Spacer()
+                    }
+                    .padding(.horizontal, 16)
+                    
+//                    ScrollView {
+//                        LazyVGrid(columns: columns) {
+//                            ForEach(0...jobs.count, id: \.self) { _ in
+//                                Capsule()
+//                            }
+//                        }
+//                    }
+                    
+                    ScrollView {
+                        LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
+                            ForEach(jobs, id: \.self) { item in
+                                Text(item)
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 10)
+                                    .overlay {
+                                        Capsule()
+                                            .stroke(Color.black, lineWidth: 1)
+                                    }
+                                
+                            }
+                        }
+                        .padding()
+                    }
+                }
 
                 
                 Spacer()
