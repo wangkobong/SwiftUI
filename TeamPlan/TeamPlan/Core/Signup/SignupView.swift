@@ -15,6 +15,10 @@ struct SignupView: View {
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
     let jobs = ["직장인", "대학(원)생", "프리랜서", "기타"]
+    let interests = [
+        "IT/TECH", "가전/전자", "철강", "Display", "건설/건축/인테리어", "반도체", "콘텐츠",
+        "2차전지", "정유", "FMCG/음식/소매", "석유화학", "스마트물류/유통", "바이오/헬스케어", "인공지능/IoT","기타"
+    ]
     
     let columns = [
         GridItem(.flexible()),
@@ -47,35 +51,42 @@ struct SignupView: View {
                 
                 VStack {
                     HStack {
-                        Text("어떤 일을 하시나요?")
+                        Text("어떤 분야에 관심있으신가요??")
                             .foregroundColor(Color(hex: "2B2B2B"))
                             .font(.appleSDGothicNeo(.semiBold, size: 25))
                         Spacer()
                     }
                     .padding(.horizontal, 16)
+
                     
 //                    ScrollView {
-//                        LazyVGrid(columns: columns) {
-//                            ForEach(0...jobs.count, id: \.self) { _ in
-//                                Capsule()
+//                        LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
+//                            ForEach(Interests, id: \.self) { item in
+//                                Text(item)
+//                                    .padding(.horizontal, 20)
+//                                    .padding(.vertical, 10)
+//                                    .overlay {
+//                                        Capsule()
+//                                            .stroke(Color.black, lineWidth: 1)
+//                                    }
+//
 //                            }
 //                        }
+//                        .padding()
 //                    }
-                    
                     ScrollView {
-                        LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
-                            ForEach(jobs, id: \.self) { item in
+                        LazyVGrid(columns: columns, spacing: 16, pinnedViews: .sectionHeaders) {
+                            ForEach(interests, id: \.self) { item in
                                 Text(item)
-                                    .padding(.horizontal, 20)
-                                    .padding(.vertical, 10)
-                                    .overlay {
-                                        Capsule()
-                                            .stroke(Color.black, lineWidth: 1)
-                                    }
-                                
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(10)
+                                   
                             }
                         }
-                        .padding()
+                        
+                        
+            
                     }
                 }
 
@@ -188,5 +199,34 @@ extension SignupView {
 
         }
 
+    }
+    
+    private var jobSection: some View {
+        VStack {
+            HStack {
+                Text("어떤 일을 하시나요?")
+                    .foregroundColor(Color(hex: "2B2B2B"))
+                    .font(.appleSDGothicNeo(.semiBold, size: 25))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+
+            
+            ScrollView {
+                LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
+                    ForEach(jobs, id: \.self) { item in
+                        Text(item)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10)
+                            .overlay {
+                                Capsule()
+                                    .stroke(Color.black, lineWidth: 1)
+                            }
+                        
+                    }
+                }
+                .padding()
+            }
+        }
     }
 }
