@@ -16,8 +16,8 @@ struct SignupView: View {
     
     let jobs = ["직장인", "대학(원)생", "프리랜서", "기타"]
     let interests = [
-        "IT/TECH", "가전/전자", "철강", "Display", "건설/건축/인테리어", "반도체", "콘텐츠",
-        "2차전지", "정유", "FMCG/음식/소매", "석유화학", "스마트물류/유통", "바이오/헬스케어", "인공지능/IoT","기타"
+        "IT / TECH", "가전 / 전자", "철강", "Display", "건설 / 건축 / 인테리어", "반도체", "콘텐츠",
+        "2차전지", "정유", "FMCG /음식 / 소매", "석유화학", "스마트물류 / 유통", "바이오 / 헬스케어", "인공지능 / IoT","기타"
     ]
     
     let columns = [
@@ -58,36 +58,9 @@ struct SignupView: View {
                     }
                     .padding(.horizontal, 16)
 
-                    
-//                    ScrollView {
-//                        LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
-//                            ForEach(Interests, id: \.self) { item in
-//                                Text(item)
-//                                    .padding(.horizontal, 20)
-//                                    .padding(.vertical, 10)
-//                                    .overlay {
-//                                        Capsule()
-//                                            .stroke(Color.black, lineWidth: 1)
-//                                    }
-//
-//                            }
-//                        }
-//                        .padding()
-//                    }
-                    ScrollView {
-                        LazyVGrid(columns: columns, spacing: 16, pinnedViews: .sectionHeaders) {
-                            ForEach(interests, id: \.self) { item in
-                                Text(item)
-                                    .padding()
-                                    .background(Color.blue)
-                                    .cornerRadius(10)
-                                   
-                            }
-                        }
-                        
-                        
-            
-                    }
+                    TagCloudView(tags: interests)
+                        .padding()
+   
                 }
 
                 
@@ -230,3 +203,78 @@ extension SignupView {
         }
     }
 }
+
+
+
+struct TagCloudView: View {
+    var tags: [String]
+
+    @State private var totalHeight
+          = CGFloat.zero       // << variant for ScrollView/List
+    //    = CGFloat.infinity   // << variant for VStack
+
+    var body: some View {
+        VStack {
+            GeometryReader { geometry in
+                self.generateContent(in: geometry)
+            }
+        }
+        .frame(height: totalHeight)// << variant for ScrollView/List
+        //.frame(maxHeight: totalHeight) // << variant for VStack
+    }
+
+    private func generateContent(in g: GeometryProxy) -> some View {
+        var width = CGFloat.zero
+        var height = CGFloat.zero
+
+        return ZStack(alignment: .topLeading) {
+            ForEach(self.tags, id: \.self) { tag in
+                self.item(for: tag)
+                    .padding([.horizontal, .vertical], 4)
+                    .alignmentGuide(.leading, computeValue: { d in
+                        if (abs(width - d.width) > g.size.width)
+                        {
+                            width = 0
+                            height -= d.height
+                        }
+                        let result = width
+                        if tag == self.tags.last! {
+                            width = 0 //last item
+                        } else {
+                            width -= d.width
+                        }
+                        return result
+                    })
+                    .alignmentGuide(.top, computeValue: {d in
+                        let result = height
+                        if tag == self.tags.last! {
+                            height = 0 // last item
+                        }
+                        return result
+                    })
+            }
+        }.background(viewHeightReader($totalHeight))
+    }
+
+    private func item(for text: String) -> some View {
+        Text(text)
+            .padding(.horizontal, 20)
+            .padding(.vertical, 10)
+            .overlay {
+                Capsule()
+                    .stroke(Color.theme.greyColor, lineWidth: 1)
+            }
+            .background(.red)
+    }
+
+    private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
+        return GeometryReader { geometry -> Color in
+            let rect = geometry.frame(in: .local)
+            DispatchQueue.main.async {
+                binding.wrappedValue = rect.size.height
+            }
+            return .clear
+        }
+    }
+}
+
