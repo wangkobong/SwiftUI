@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct SignupView: View {
     
@@ -49,19 +50,7 @@ struct SignupView: View {
                 Spacer()
                     .frame(height: 42)
                 
-                VStack {
-                    HStack {
-                        Text("어떤 분야에 관심있으신가요??")
-                            .foregroundColor(Color(hex: "2B2B2B"))
-                            .font(.appleSDGothicNeo(.semiBold, size: 25))
-                        Spacer()
-                    }
-                    .padding(.horizontal, 16)
 
-                    TagCloudView(tags: interests)
-                        .padding()
-   
-                }
 
                 
                 Spacer()
@@ -185,95 +174,50 @@ extension SignupView {
             .padding(.horizontal, 16)
 
             
-            ScrollView {
-                LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
-                    ForEach(jobs, id: \.self) { item in
-                        Text(item)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                            .overlay {
-                                Capsule()
-                                    .stroke(Color.black, lineWidth: 1)
-                            }
-                        
-                    }
+            WrappingHStack(alignment: .leading) {
+                ForEach(jobs, id: \.self) { item in
+                    Text(item)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .overlay {
+                            Capsule()
+                                .stroke(Color.black, lineWidth: 1)
+                        }
+                        .onTapGesture {
+                            print(item)
+                        }
                 }
-                .padding()
             }
+            .padding()
         }
     }
-}
-
-
-
-struct TagCloudView: View {
-    var tags: [String]
-
-    @State private var totalHeight
-          = CGFloat.zero       // << variant for ScrollView/List
-    //    = CGFloat.infinity   // << variant for VStack
-
-    var body: some View {
+    
+    private var interestSection: some View {
         VStack {
-            GeometryReader { geometry in
-                self.generateContent(in: geometry)
+            HStack {
+                Text("어떤 분야에 관심있으신가요??")
+                    .foregroundColor(Color(hex: "2B2B2B"))
+                    .font(.appleSDGothicNeo(.semiBold, size: 25))
+                Spacer()
             }
-        }
-        .frame(height: totalHeight)// << variant for ScrollView/List
-        //.frame(maxHeight: totalHeight) // << variant for VStack
-    }
+            .padding(.horizontal, 16)
 
-    private func generateContent(in g: GeometryProxy) -> some View {
-        var width = CGFloat.zero
-        var height = CGFloat.zero
-
-        return ZStack(alignment: .topLeading) {
-            ForEach(self.tags, id: \.self) { tag in
-                self.item(for: tag)
-                    .padding([.horizontal, .vertical], 4)
-                    .alignmentGuide(.leading, computeValue: { d in
-                        if (abs(width - d.width) > g.size.width)
-                        {
-                            width = 0
-                            height -= d.height
+            WrappingHStack(alignment: .leading) {
+                ForEach(interests, id: \.self) { item in
+                    Text(item)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .overlay {
+                            Capsule()
+                                .stroke(Color.black, lineWidth: 1)
                         }
-                        let result = width
-                        if tag == self.tags.last! {
-                            width = 0 //last item
-                        } else {
-                            width -= d.width
+                        .onTapGesture {
+                            print(item)
                         }
-                        return result
-                    })
-                    .alignmentGuide(.top, computeValue: {d in
-                        let result = height
-                        if tag == self.tags.last! {
-                            height = 0 // last item
-                        }
-                        return result
-                    })
+                }
             }
-        }.background(viewHeightReader($totalHeight))
-    }
+            .padding()
 
-    private func item(for text: String) -> some View {
-        Text(text)
-            .padding(.horizontal, 20)
-            .padding(.vertical, 10)
-            .overlay {
-                Capsule()
-                    .stroke(Color.theme.greyColor, lineWidth: 1)
-            }
-            .background(.red)
-    }
-
-    private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
-        return GeometryReader { geometry -> Color in
-            let rect = geometry.frame(in: .local)
-            DispatchQueue.main.async {
-                binding.wrappedValue = rect.size.height
-            }
-            return .clear
         }
     }
 }
