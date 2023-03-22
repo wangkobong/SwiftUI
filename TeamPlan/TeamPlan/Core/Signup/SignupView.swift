@@ -21,6 +21,10 @@ struct SignupView: View {
         "2차전지", "정유", "FMCG /음식 / 소매", "석유화학", "스마트물류 / 유통", "바이오 / 헬스케어", "인공지능 / IoT","기타"
     ]
     
+    let abilities = [
+        "변화관리", "창의 융합", "신뢰 구축", "협상", "경청, 조언, 상담", "문제 해결(트러블슈팅)", "집중력, 업무추진", "비즈니스 운영, 관리", "기획, 전략 설정", "커뮤니케이션", "회계, 예산관리", "세일즈(판매)", "인적자원운영"
+    ]
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -51,7 +55,7 @@ struct SignupView: View {
                     .frame(height: 42)
                 
 
-
+                abilitiesSection
                 
                 Spacer()
                 
@@ -204,6 +208,35 @@ extension SignupView {
 
             WrappingHStack(alignment: .leading) {
                 ForEach(interests, id: \.self) { item in
+                    Text(item)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .overlay {
+                            Capsule()
+                                .stroke(Color.black, lineWidth: 1)
+                        }
+                        .onTapGesture {
+                            print(item)
+                        }
+                }
+            }
+            .padding()
+
+        }
+    }
+    
+    private var abilitiesSection: some View {
+        VStack {
+            HStack {
+                Text("당신의 능력 BEST 4는 무엇인가요?")
+                    .foregroundColor(Color(hex: "2B2B2B"))
+                    .font(.appleSDGothicNeo(.semiBold, size: 25))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+
+            WrappingHStack(alignment: .leading) {
+                ForEach(abilities, id: \.self) { item in
                     Text(item)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
