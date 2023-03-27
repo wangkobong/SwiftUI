@@ -17,6 +17,7 @@
 		FE7C37D529F0423800531390 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FE7C37D429F0423800531390 /* FirebaseAuth */; };
 		FE7C37D829F0431700531390 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37D729F0431700531390 /* AuthenticationView.swift */; };
 		FE7C37DA29F043AD00531390 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37D929F043AD00531390 /* SignInEmailView.swift */; };
+		FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FE7C37CC29EEF7EF00531390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FE7C37D729F0431700531390 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		FE7C37D929F043AD00531390 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				FE7C37D729F0431700531390 /* AuthenticationView.swift */,
 				FE7C37D929F043AD00531390 /* SignInEmailView.swift */,
+				FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				FE7C37C129EEF4CB00531390 /* ContentView.swift in Sources */,
 				FE7C37BF29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift in Sources */,
 				FE7C37D829F0431700531390 /* AuthenticationView.swift in Sources */,
+				FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */,
 				FE7C37DA29F043AD00531390 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
