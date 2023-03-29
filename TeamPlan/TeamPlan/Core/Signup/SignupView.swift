@@ -40,7 +40,9 @@ struct SignupView: View {
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
     
-
+    // goal
+    @State var goalCount: String = ""
+    
     var body: some View {
         NavigationView {
 
@@ -54,8 +56,8 @@ struct SignupView: View {
                 Spacer()
                     .frame(height: 42)
                 
-
-                abilitiesSection
+                
+                goalSection
                 
                 Spacer()
                 
@@ -250,6 +252,91 @@ extension SignupView {
                 }
             }
             .padding()
+
+        }
+    }
+    
+    private var goalSection: some View {
+        VStack {
+            HStack {
+                Text("당신의 목표를 설정해주세요!")
+                    .foregroundColor(Color(hex: "2B2B2B"))
+                    .font(.appleSDGothicNeo(.semiBold, size: 25))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            Spacer()
+                .frame(height: 7)
+            HStack {
+                Text("목표를 설정하면\n 당신의 목표달성률을 확인할 수 있어요")
+                    .foregroundColor(.theme.greyColor)
+                    .font(.appleSDGothicNeo(.regular, size: 16))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            
+
+            VStack(spacing: 23) {
+                HStack {
+                    Spacer()
+                        .frame(width: 16)
+                    Text("차근차근 도전하자!👊 3개 도전")
+                        .frame(height: 41, alignment: .leading)
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                             RoundedRectangle(cornerRadius: 2)
+                                 .stroke(Color.black, lineWidth: 1)
+                         )
+                    Spacer()
+                        .frame(width: 16)
+                }
+                
+                HStack {
+                    Spacer()
+                        .frame(width: 16)
+                    Text("더 힘내볼까?👊 5개 도전")
+                        .frame(height: 41, alignment: .leading)
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                             RoundedRectangle(cornerRadius: 2)
+                                 .stroke(Color.black, lineWidth: 1)
+                         )
+                    Spacer()
+                        .frame(width: 16)
+                }
+                
+                HStack {
+                    Spacer()
+                        .frame(width: 16)
+                    Text("나는 파워 계획러~👊 10개 도전")
+                        .frame(height: 41, alignment: .leading)
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                             RoundedRectangle(cornerRadius: 2)
+                                 .stroke(Color.black, lineWidth: 1)
+                         )
+                    Spacer()
+                        .frame(width: 16)
+                }
+                
+                
+                HStack {
+                    Spacer()
+                        .frame(width: 16)
+                    TextField("직접 입력하기", text: $goalCount)
+                        .frame(height: 41, alignment: .leading)
+                        .frame(maxWidth: .infinity)
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
+                        .overlay(
+                             RoundedRectangle(cornerRadius: 2)
+                                 .stroke(Color.black, lineWidth: 1)
+                         )
+                    Spacer()
+                        .frame(width: 16)
+                }
+                    
+
+            }
 
         }
     }
