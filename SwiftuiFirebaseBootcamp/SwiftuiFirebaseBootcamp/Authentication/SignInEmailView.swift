@@ -17,10 +17,13 @@ final class SignInEmailViewModel: ObservableObject {
             print("No email or password found.")
             return
         }
-        
+        print("password: \(password)")
+        print("email: \(email)")
+
         Task {
             do {
                 let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, password: password)
+
                 print("Success")
                 print(returnedUserData)
             } catch {

@@ -19,6 +19,7 @@
 		FE7C37DA29F043AD00531390 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37D929F043AD00531390 /* SignInEmailView.swift */; };
 		FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */; };
 		FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80912A0C5E8F00D69101 /* RootView.swift */; };
+		FEBD80942A0C606B00D69101 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80932A0C606B00D69101 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FE7C37D929F043AD00531390 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		FEBD80912A0C5E8F00D69101 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FEBD80932A0C606B00D69101 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FE7C37D929F043AD00531390 /* SignInEmailView.swift */,
 				FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */,
 				FEBD80912A0C5E8F00D69101 /* RootView.swift */,
+				FEBD80932A0C606B00D69101 /* SettingsView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBD80942A0C606B00D69101 /* SettingsView.swift in Sources */,
 				FE7C37C129EEF4CB00531390 /* ContentView.swift in Sources */,
 				FE7C37BF29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift in Sources */,
 				FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */,
