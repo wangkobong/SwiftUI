@@ -21,6 +21,20 @@ final class SettingViewModel: ObservableObject {
         }
         try await AuthenticationManager.shared.resetPassword(email: email)
     }
+    
+    func updateEmail() async throws {
+        
+        let email = "test123@gmail.com"
+
+        try await AuthenticationManager.shared.updateEmail(email: email)
+    }
+    
+    func updatePassword() async throws {
+        
+        let password = "hello1234"
+
+        try await AuthenticationManager.shared.updatePassword(password: password)
+    }
 
     
 }
@@ -47,6 +61,39 @@ struct SettingsView: View {
                     do {
                         try await viewModel.resetPassword()
                         print("Reset Password")
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            
+            Button("Reset Password") {
+                Task {
+                    do {
+                        try await viewModel.resetPassword()
+                        print("Reset Password")
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            
+            Button("Update Password") {
+                Task {
+                    do {
+                        try await viewModel.updatePassword()
+                        print("Update Password")
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            
+            Button("Update Email") {
+                Task {
+                    do {
+                        try await viewModel.updateEmail()
+                        print("Update Email")
                     } catch {
                         print(error.localizedDescription)
                     }
