@@ -56,17 +56,24 @@ struct SettingsView: View {
                 }
             }
             
-            Button("Reset Password") {
-                Task {
-                    do {
-                        try await viewModel.resetPassword()
-                        print("Reset Password")
-                    } catch {
-                        print(error.localizedDescription)
-                    }
-                }
-            }
-            
+            emailSection
+        }
+        .navigationTitle("Settings")
+    }
+}
+
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            SettingsView(showSignInView: .constant(false))
+        }
+    }
+}
+
+extension SettingsView {
+    
+    private var emailSection: some View {
+        Section {
             Button("Reset Password") {
                 Task {
                     do {
@@ -99,16 +106,8 @@ struct SettingsView: View {
                     }
                 }
             }
-
-        }
-        .navigationTitle("Settings")
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            SettingsView(showSignInView: .constant(false))
+        } header: {
+            Text("Email functions")
         }
     }
 }
