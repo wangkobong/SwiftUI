@@ -22,6 +22,7 @@
 		FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */; };
 		FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80912A0C5E8F00D69101 /* RootView.swift */; };
 		FEBD80942A0C606B00D69101 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80932A0C606B00D69101 /* SettingsView.swift */; };
+		FECCD7D02A12F712000D005B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD7CF2A12F712000D005B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FEBD80912A0C5E8F00D69101 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FEBD80932A0C606B00D69101 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FECCD7CD2A12F485000D005B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FECCD7CF2A12F712000D005B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FECCD7CD2A12F485000D005B /* Info.plist */,
+				FECCD7CE2A12F6FA000D005B /* Util */,
 				FE7C37D629F042FF00531390 /* Authentication */,
 				FE7C37CC29EEF7EF00531390 /* GoogleService-Info.plist */,
 				FE7C37BE29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift */,
@@ -111,6 +114,14 @@
 				FEBD80932A0C606B00D69101 /* SettingsView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FECCD7CE2A12F6FA000D005B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FECCD7CF2A12F712000D005B /* Utilities.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */,
 				FE7C37D829F0431700531390 /* AuthenticationView.swift in Sources */,
 				FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */,
+				FECCD7D02A12F712000D005B /* Utilities.swift in Sources */,
 				FE7C37DA29F043AD00531390 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
