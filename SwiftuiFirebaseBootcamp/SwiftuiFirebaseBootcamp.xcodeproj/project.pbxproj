@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE0439042A12F45B0076D47E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FE0439032A12F45B0076D47E /* GoogleSignIn */; };
 		FE0439062A12F45B0076D47E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FE0439052A12F45B0076D47E /* GoogleSignInSwift */; };
+		FE65FD032A1436DE0092E450 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65FD022A1436DE0092E450 /* SignInGoogleHelper.swift */; };
 		FE7C37BF29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37BE29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift */; };
 		FE7C37C129EEF4CB00531390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C37C029EEF4CB00531390 /* ContentView.swift */; };
 		FE7C37C329EEF4CC00531390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7C37C229EEF4CC00531390 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE65FD022A1436DE0092E450 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		FE7C37BB29EEF4CB00531390 /* SwiftuiFirebaseBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiFirebaseBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7C37BE29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiFirebaseBootcampApp.swift; sourceTree = "<group>"; };
 		FE7C37C029EEF4CB00531390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				FE7C37DB29F0455E00531390 /* AuthenticationManager.swift */,
 				FEBD80912A0C5E8F00D69101 /* RootView.swift */,
 				FEBD80932A0C606B00D69101 /* SettingsView.swift */,
+				FE65FD022A1436DE0092E450 /* SignInGoogleHelper.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				FE7C37C129EEF4CB00531390 /* ContentView.swift in Sources */,
 				FE7C37BF29EEF4CB00531390 /* SwiftuiFirebaseBootcampApp.swift in Sources */,
 				FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */,
+				FE65FD032A1436DE0092E450 /* SignInGoogleHelper.swift in Sources */,
 				FE7C37D829F0431700531390 /* AuthenticationView.swift in Sources */,
 				FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */,
 				FECCD7D02A12F712000D005B /* Utilities.swift in Sources */,
