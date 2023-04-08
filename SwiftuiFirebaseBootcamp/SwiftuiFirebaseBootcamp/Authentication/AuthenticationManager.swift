@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseAuth
 
+
 struct AuthDataResultModel {
     let uid: String
     let email: String?
@@ -18,6 +19,11 @@ struct AuthDataResultModel {
         self.email = user.email
         self.photoUrl = user.photoURL?.absoluteString
     }
+}
+
+enum AuthProviderOption: String {
+    case email = "password"
+    case google = "google.com"
 }
 
 final class AuthenticationManager {
@@ -31,6 +37,23 @@ final class AuthenticationManager {
         }
         
         return AuthDataResultModel(user: user)
+    }
+    
+    func getProvider() throws -> [AuthProviderOption] {
+        guard let providerData = Auth.auth().currentUser?.providerData else {
+            throw URLError(.badServerResponse)
+        }
+        
+        var providers: [AuthProviderOption] = []
+        for provider in providerData {
+            if let option = AuthProviderOption(rawValue: provider.providerID) {
+                providers.append(option)
+            } else {
+                assertionFailure("Provider option not found: \(provider.providerID)")
+            }
+        }
+        
+        return providers
     }
     
     func singOut() throws {
