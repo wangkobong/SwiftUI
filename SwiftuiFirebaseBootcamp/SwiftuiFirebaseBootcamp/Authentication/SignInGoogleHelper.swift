@@ -13,6 +13,8 @@ import GoogleSignInSwift
 struct GoogleSignInResultModel {
     let idToken: String
     let accessToken: String
+    let name: String?
+    let email: String?
 }
 
 
@@ -30,8 +32,9 @@ final class SignInGoogleHelper {
             throw URLError(.badServerResponse)
         }
         let accessToken: String = gidSignInResult.user.accessToken.tokenString
-        
-        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken)
+        let name: String = gidSignInResult.user.profile?.name ?? "unknown"
+        let email: String = gidSignInResult.user.profile?.email ?? "unknown"
+        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, name: name, email: email)
         return tokens
     }
 }
