@@ -45,9 +45,8 @@ struct SignupView: View {
     
     var body: some View {
         NavigationView {
-
+            
             VStack {
-                
                 Spacer()
                     .frame(height: 34)
 
@@ -57,24 +56,45 @@ struct SignupView: View {
                     .frame(height: 42)
                 
                 
-                goalSection
+                ZStack {
+                    switch signupState {
+                    case 0:
+                        profileSection
+                            .transition(transition)
+                    case 1:
+                        jobSection
+                            .transition(transition)
+                    case 2:
+                        interestSection
+                            .transition(transition)
+                    case 3:
+                        abilitiesSection
+                            .transition(transition)
+                    case 4:
+                        goalSection
+                            .transition(transition)
+                    default:
+                        RoundedRectangle(cornerRadius: 25)
+                            .foregroundColor(.green)
+                    }
+                }
                 
                 Spacer()
                 
-                Text("다음")
-                    .frame(width: 300, height: 96)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.theme.mainPurpleColor)
-                    .foregroundColor(.theme.whiteColor)
-                    .font(.appleSDGothicNeo(.regular, size: 20))
-                    .onTapGesture {
-                        
-                    }
+                bottomButton
+                
+
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
-                        dismiss.callAsFunction()
+                        if signupState == 0 {
+                            dismiss.callAsFunction()
+                        } else {
+                            withAnimation(.spring()) {
+                                signupState -= 1
+                            }
+                        }
                     } label: {
                         Image(systemName: "chevron.backward")
                             .foregroundColor(.theme.darkGreyColor)
@@ -99,10 +119,10 @@ extension SignupView {
     private var levelBar: some View {
         
         HStack(spacing: 3) {
-            ForEach(0..<4) { index in
+            ForEach(0..<5) { index in
                 Rectangle()
-                    .fill(Color.theme.mainBlueColor)
-                    .frame(width: 87, height: 5)
+                    .fill(getCurrentLevelBarColor(index: index))
+                    .frame(width: 70, height: 5)
                     .cornerRadius(4)
             }
         }
@@ -340,5 +360,54 @@ extension SignupView {
 
         }
     }
+    
+    private var bottomButton: some View {
+        Text(signupState == 4 ? "완료" : "다음")
+            .frame(width: 300, height: 96)
+            .frame(maxWidth: .infinity)
+            .background(Color.theme.mainPurpleColor)
+            .foregroundColor(.theme.whiteColor)
+            .font(.appleSDGothicNeo(.regular, size: 20))
+            .onTapGesture {
+                handleNextButtonPresses()
+            }
+    }
 }
 
+// MARK: - FUNCTIONS
+
+extension SignupView {
+    
+    func handleNextButtonPresses() {
+        switch signupState {
+        case 0:
+            print("profileSection")
+        case 1:
+            print("jobSection")
+        case 2:
+            print("interestSection")
+        case 3:
+            print("abilitiesSection")
+        case 4:
+            print("goalSection")
+        default:
+            break
+        }
+        
+        if signupState == 4 {
+            print("완료")
+        } else {
+            withAnimation(.spring()) {
+                signupState += 1
+            }
+        }
+    }
+    
+    func getCurrentLevelBarColor(index: Int) -> Color {
+        if index == signupState {
+            return .theme.whiteGreyColor
+        } else {
+            return .theme.mainBlueColor
+        }
+    }
+}
