@@ -198,6 +198,19 @@ extension SignupView {
                 Spacer()
             }
             .padding(.horizontal, 16)
+            
+            Spacer()
+                .frame(height: 7)
+            
+            HStack {
+                Text("프로필에 표시해놓을 수 있어요!")
+                    .foregroundColor(.theme.greyColor)
+                    .font(.appleSDGothicNeo(.regular, size: 16))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            
+
 
             
             WrappingHStack(alignment: .leading) {
@@ -227,6 +240,17 @@ extension SignupView {
                 Spacer()
             }
             .padding(.horizontal, 16)
+            
+            Spacer()
+                .frame(height: 7)
+            
+            HStack {
+                Text("관심분야를 프로필에 나타낼 수 있어요!")
+                    .foregroundColor(.theme.greyColor)
+                    .font(.appleSDGothicNeo(.regular, size: 16))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
 
             WrappingHStack(alignment: .leading) {
                 ForEach(interests, id: \.self) { item in
@@ -253,6 +277,17 @@ extension SignupView {
                 Text("당신의 능력 BEST 4는 무엇인가요?")
                     .foregroundColor(Color(hex: "2B2B2B"))
                     .font(.appleSDGothicNeo(.semiBold, size: 25))
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            
+            Spacer()
+                .frame(height: 7)
+            
+            HStack {
+                Text("BEST 능력을 통해 나의 장점을 어필할 수 있어요!")
+                    .foregroundColor(.theme.greyColor)
+                    .font(.appleSDGothicNeo(.regular, size: 16))
                 Spacer()
             }
             .padding(.horizontal, 16)
@@ -288,7 +323,7 @@ extension SignupView {
             Spacer()
                 .frame(height: 7)
             HStack {
-                Text("목표를 설정하면\n 당신의 목표달성률을 확인할 수 있어요")
+                Text("목표를 설정하면\n당신의 목표달성률을 확인할 수 있어요")
                     .foregroundColor(.theme.greyColor)
                     .font(.appleSDGothicNeo(.regular, size: 16))
                 Spacer()
