@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE1F67A029D0941A0039776B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F679F29D0941A0039776B /* SignupView.swift */; };
 		FE1F67A529D097700039776B /* DefaultNavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F67A429D097700039776B /* DefaultNavigationModifier.swift */; };
+		FE65FD052A1593750092E450 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65FD042A1593750092E450 /* SignupModel.swift */; };
 		FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */; };
 		FE7BDFB7298F90E00058A358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BDFB6298F90E00058A358 /* ContentView.swift */; };
 		FE7BDFB9298F90E10058A358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7BDFB8298F90E10058A358 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		FE1F679F29D0941A0039776B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		FE1F67A429D097700039776B /* DefaultNavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationModifier.swift; sourceTree = "<group>"; };
+		FE65FD042A1593750092E450 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		FE7BDFB1298F90E00058A358 /* TeamPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7BDFB4298F90E00058A358 /* TeamPlanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlanApp.swift; sourceTree = "<group>"; };
 		FE7BDFB6298F90E00058A358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				FE1F679F29D0941A0039776B /* SignupView.swift */,
+				FE65FD042A1593750092E450 /* SignupModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				FE7BDFB7298F90E00058A358 /* ContentView.swift in Sources */,
 				FEDA9CF729B49FCF00BD7924 /* TermsDetailView.swift in Sources */,
 				FEB5742F29B4574500001CC9 /* Color+Extension.swift in Sources */,
+				FE65FD052A1593750092E450 /* SignupModel.swift in Sources */,
 				FE7BDFC7298F99ED0058A358 /* OnboardingView.swift in Sources */,
 				FE7BDFB5298F90E00058A358 /* TeamPlanApp.swift in Sources */,
 				FE1F67A029D0941A0039776B /* SignupView.swift in Sources */,

@@ -15,7 +15,13 @@ struct SignupView: View {
     
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
-    let jobs = ["직장인", "대학(원)생", "프리랜서", "기타"]
+    @State var jobs = [
+        SignupModel(title: "직장인"),
+        SignupModel(title: "대학(원)생"),
+        SignupModel(title: "프리랜서"),
+        SignupModel(title: "기타")
+    ]
+    
     let interests = [
         "IT / TECH", "가전 / 전자", "철강", "Display", "건설 / 건축 / 인테리어", "반도체", "콘텐츠",
         "2차전지", "정유", "FMCG /음식 / 소매", "석유화학", "스마트물류 / 유통", "바이오 / 헬스케어", "인공지능 / IoT","기타"
@@ -190,6 +196,7 @@ extension SignupView {
     }
     
     private var jobSection: some View {
+        
         VStack {
             HStack {
                 Text("어떤 일을 하시나요?")
@@ -214,16 +221,20 @@ extension SignupView {
 
             
             WrappingHStack(alignment: .leading) {
-                ForEach(jobs, id: \.self) { item in
-                    Text(item)
+                ForEach(jobs.indices, id: \.self) { index in
+                    Text(jobs[index].title)
+                        .foregroundColor(jobs[index].isSelected ? .theme.whiteColor : .theme.blackColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
                         .overlay {
                             Capsule()
                                 .stroke(Color.black, lineWidth: 1)
+//                                .background(jobs[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
                         }
                         .onTapGesture {
-                            print(item)
+                            print(jobs[index].title)
+                            jobs[index].isSelected.toggle()
+                            print(jobs[index].isSelected)
                         }
                 }
             }
