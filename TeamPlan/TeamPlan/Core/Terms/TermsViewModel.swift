@@ -18,7 +18,7 @@ final class TermsViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init() {
-        addSubscribers()
+        self.addSubscribers()
     }
     
     private func addSubscribers() {

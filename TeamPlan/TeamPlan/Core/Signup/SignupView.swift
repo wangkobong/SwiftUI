@@ -10,17 +10,18 @@ import WrappingHStack
 
 struct SignupView: View {
     
+    @EnvironmentObject private var signupViewModel: SignupViewModel
     @Environment(\.dismiss) var dismiss
     @State var signupState: Int = 0
     
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
-    @State var jobs = [
-        SignupModel(title: "직장인"),
-        SignupModel(title: "대학(원)생"),
-        SignupModel(title: "프리랜서"),
-        SignupModel(title: "기타")
-    ]
+//    @State var jobs = [
+//        SignupModel(title: "직장인"),
+//        SignupModel(title: "대학(원)생"),
+//        SignupModel(title: "프리랜서"),
+//        SignupModel(title: "기타")
+//    ]
     
     let interests = [
         "IT / TECH", "가전 / 전자", "철강", "Display", "건설 / 건축 / 인테리어", "반도체", "콘텐츠",
@@ -221,9 +222,9 @@ extension SignupView {
 
             
             WrappingHStack(alignment: .leading) {
-                ForEach(jobs.indices, id: \.self) { index in
-                    Text(jobs[index].title)
-                        .foregroundColor(jobs[index].isSelected ? .theme.whiteColor : .theme.blackColor)
+                ForEach(signupViewModel.jobs.indices, id: \.self) { index in
+                    Text(signupViewModel.jobs[index].title)
+                        .foregroundColor(signupViewModel.jobs[index].isSelected ? .theme.whiteColor : .theme.blackColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
                         .overlay {
@@ -232,9 +233,9 @@ extension SignupView {
 //                                .background(jobs[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
                         }
                         .onTapGesture {
-                            print(jobs[index].title)
-                            jobs[index].isSelected.toggle()
-                            print(jobs[index].isSelected)
+                            print(signupViewModel.jobs[index].title)
+                            signupViewModel.jobs[index].isSelected.toggle()
+                            print(signupViewModel.jobs[index].isSelected)
                         }
                 }
             }

@@ -12,6 +12,7 @@ struct teamplanApp: App {
     
     @State private var showIntroView: Bool = true
     @State private var termsViewModel = TermsViewModel()
+    @State private var signupViewModel = SignupViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -24,6 +25,7 @@ struct teamplanApp: App {
                 }
             }
             .environmentObject(termsViewModel)
+            .environmentObject(signupViewModel)
         }
     }
 }
