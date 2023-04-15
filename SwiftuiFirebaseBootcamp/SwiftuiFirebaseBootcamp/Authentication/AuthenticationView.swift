@@ -11,6 +11,23 @@ import GoogleSignInSwift
 import FirebaseAuth
 import AuthenticationServices
 
+struct SignInWithAppleButtonViewRepresentable: UIViewRepresentable {
+    
+    let type: ASAuthorizationAppleIDButton.ButtonType
+    let style: ASAuthorizationAppleIDButton.Style
+    
+    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
+        
+        return ASAuthorizationAppleIDButton(authorizationButtonType: type, authorizationButtonStyle: style)
+        
+    }
+    
+    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
+        
+    }
+    
+}
+
 @MainActor
 final class AuthenticationViewModel: ObservableObject {
     
@@ -55,12 +72,27 @@ struct AuthenticationView: View {
                 }
             }
             
-            SignInWithAppleButton { request in
-                
-            } onCompletion: { result in
-                
+            Button {
+      
+                Task {
+                    do {
+                        try await viewModel.signInApple()
+                        print("구글로그인 성공")
+                        showSignInView = false
+                    } catch {
+                        print(error)
+                    }
+                }
+
+            } label: {
+                SignInWithAppleButtonViewRepresentable(type: .default, style: .black)
+                    .allowsTightening(false)
+               
             }
             .frame(height: 55)
+
+            
+
 
             
             Spacer()
