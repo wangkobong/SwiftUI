@@ -53,7 +53,7 @@ final class AuthenticationManager {
                 assertionFailure("Provider option not found: \(provider.providerID)")
             }
         }
-        
+        print(providers)
         return providers
     }
     

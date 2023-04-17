@@ -24,6 +24,7 @@
 		FEBD80922A0C5E8F00D69101 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80912A0C5E8F00D69101 /* RootView.swift */; };
 		FEBD80942A0C606B00D69101 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD80932A0C606B00D69101 /* SettingsView.swift */; };
 		FECCD7D02A12F712000D005B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD7CF2A12F712000D005B /* Utilities.swift */; };
+		FEDCC0A12A2FEBE30072A1A2 /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCC0A02A2FEBE30072A1A2 /* SignInAppleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FEBD80932A0C606B00D69101 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FECCD7CD2A12F485000D005B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FECCD7CF2A12F712000D005B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FEDCC0A02A2FEBE30072A1A2 /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FEBD80912A0C5E8F00D69101 /* RootView.swift */,
 				FEBD80932A0C606B00D69101 /* SettingsView.swift */,
 				FE65FD022A1436DE0092E450 /* SignInGoogleHelper.swift */,
+				FEDCC0A02A2FEBE30072A1A2 /* SignInAppleHelper.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				FE7C37D829F0431700531390 /* AuthenticationView.swift in Sources */,
 				FE7C37DC29F0455E00531390 /* AuthenticationManager.swift in Sources */,
 				FECCD7D02A12F712000D005B /* Utilities.swift in Sources */,
+				FEDCC0A12A2FEBE30072A1A2 /* SignInAppleHelper.swift in Sources */,
 				FE7C37DA29F043AD00531390 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
