@@ -39,6 +39,21 @@ final class SignInAppleHelper: NSObject {
     private var currentNonce: String?
     private var completionHandler: ((Result<SignInWithAppleResult, Error>) -> Void)? = nil
     
+    func startSignInWithAppleFlow() async throws -> SignInWithAppleResult {
+        try await withCheckedThrowingContinuation { continuation in
+            self.startSignInWithAppleFlow { result in
+                switch result {
+                case .success(let signInAppleResult):
+                    continuation.resume(returning: signInAppleResult)
+                    return
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                    return
+                }
+            }
+        }
+    }
+    
     func startSignInWithAppleFlow(completion: @escaping (Result<SignInWithAppleResult, Error>) -> Void) {
         
         let nonce = randomNonceString()
