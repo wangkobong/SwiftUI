@@ -91,6 +91,7 @@
 		FEDA830F294A210B000CB884 /* DocumentationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA830E294A210B000CB884 /* DocumentationBootcamp.swift */; };
 		FEDC9C99296B0D720080BF52 /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC9C98296B0D720080BF52 /* CoreDataBootcamp.swift */; };
 		FEDC9C9C296B10740080BF52 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEDC9C9A296B10740080BF52 /* FruitsContainer.xcdatamodeld */; };
+		FEDE4AF82A30C4B4001866BD /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE4AF72A30C4B4001866BD /* NavigationStackBootcamp.swift */; };
 		FEE7A8C6292FC86B00DF77F2 /* ContextMenuBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */; };
 		FEE7A8C8292FCA3100DF77F2 /* TextFieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */; };
 		FEFB5F0F29646FA300989EB9 /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */; };
@@ -183,6 +184,7 @@
 		FEDA830E294A210B000CB884 /* DocumentationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationBootcamp.swift; sourceTree = "<group>"; };
 		FEDC9C98296B0D720080BF52 /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		FEDC9C9B296B10740080BF52 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		FEDE4AF72A30C4B4001866BD /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		FEE7A8C5292FC86B00DF77F2 /* ContextMenuBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBootcamp.swift; sourceTree = "<group>"; };
 		FEE7A8C7292FCA3100DF77F2 /* TextFieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBootcamp.swift; sourceTree = "<group>"; };
 		FEFB5F0E29646FA300989EB9 /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				FE3347F0294F5C150096EF90 /* ModelBootcamp.swift */,
 				FE3347F22950A8420096EF90 /* ViewModelBootcamp.swift */,
 				FE3347F42950B5D80096EF90 /* EnvironmentObjectBootcamp.swift */,
+				FEDE4AF72A30C4B4001866BD /* NavigationStackBootcamp.swift */,
 				FE3347F6295209100096EF90 /* AppStorageBootcamp.swift */,
 				FEFCE43229719C1A00C6D26B /* WeakSelfBootcamp.swift */,
 				FE34A93829743C3500269054 /* TypealiasBootcamp.swift */,
@@ -530,6 +533,7 @@
 				FE3D224229633162008FFD7D /* MultipleSheetsBootcamp.swift in Sources */,
 				FE0EC4AF290D597900E5E677 /* SwiftuiThinkingBootcampApp.swift in Sources */,
 				FE51BE902959F915003F5724 /* ProfileView.swift in Sources */,
+				FEDE4AF82A30C4B4001866BD /* NavigationStackBootcamp.swift in Sources */,
 				FE99CD5C29267EB300F8538B /* BindingBootcamp.swift in Sources */,
 				FE3347F1294F5C150096EF90 /* ModelBootcamp.swift in Sources */,
 				FE3D224029632875008FFD7D /* GeometryReaderBootcamp2.swift in Sources */,
