@@ -14,6 +14,10 @@ final class SignupViewModel: ObservableObject {
     @Published var interests: [SignupModel] = []
     @Published var abilities: [SignupModel] = []
     
+    @Published var selectedJobs: [String] = []
+    @Published var selectedInterests: [String] = []
+    @Published var selectedAbilities: [String] = []
+    
     private let signupDataService = SignupDataService()
     private var cancellables = Set<AnyCancellable>()
     

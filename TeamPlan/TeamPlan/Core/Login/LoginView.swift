@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State private var showSignup = false
+    
     var body: some View {
         NavigationView {
             VStack {
+                
+                NavigationLink(
+                    destination: SignupView().defaultNavigationMFormatting(),
+                     isActive: $showSignup) {
+                          Text("")
+                               .hidden()
+                     }
+                
                 HStack {
                     Image("loginView")
                         .padding(.trailing, 51)
@@ -18,30 +29,25 @@ struct LoginView: View {
                 }
                 Spacer()
                     .frame(height: 100)
-                NavigationLink {
-                    TermsView()
-                        .defaultNavigationMFormatting()
-                } label: {
-                    HStack {
-                        Image("appleLogo")
-                        Spacer()
-                        Text("Apple로 계속하기")
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .frame(height: 48)
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.theme.blackColor)
-                    .background(
-                        RoundedRectangle(cornerRadius: 4)
-                            .stroke(SwiftUI.Color.theme.blackColor, lineWidth: 1)
-                    )
-                }
-                .padding(.horizontal, 55)
-
-
                 
-//                LoginButtonsView()
+                HStack {
+                    Image("appleLogo")
+                    Spacer()
+                    Text("Apple로 계속하기")
+                    Spacer()
+                }
+                .padding(.horizontal)
+                .frame(height: 48)
+                .frame(maxWidth: .infinity)
+                .foregroundColor(.theme.blackColor)
+                .background(
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(SwiftUI.Color.theme.blackColor, lineWidth: 1)
+                )
+                .padding(.horizontal, 55)
+                .onTapGesture {
+                    self.showSignup = true
+                }
             }
  
         }

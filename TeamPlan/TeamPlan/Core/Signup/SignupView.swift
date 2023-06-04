@@ -15,28 +15,6 @@ struct SignupView: View {
     @State var signupState: Int = 0
     
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
-    
-//    @State var jobs = [
-//        SignupModel(title: "직장인"),
-//        SignupModel(title: "대학(원)생"),
-//        SignupModel(title: "프리랜서"),
-//        SignupModel(title: "기타")
-//    ]
-    
-    let interests = [
-        "IT / TECH", "가전 / 전자", "철강", "Display", "건설 / 건축 / 인테리어", "반도체", "콘텐츠",
-        "2차전지", "정유", "FMCG /음식 / 소매", "석유화학", "스마트물류 / 유통", "바이오 / 헬스케어", "인공지능 / IoT","기타"
-    ]
-    
-    let abilities = [
-        "변화관리", "창의 융합", "신뢰 구축", "협상", "경청, 조언, 상담", "문제 해결(트러블슈팅)", "집중력, 업무추진", "비즈니스 운영, 관리", "기획, 전략 설정", "커뮤니케이션", "회계, 예산관리", "세일즈(판매)", "인적자원운영"
-    ]
-    
-    let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
 
     // onboarding inputs
     @State var nickname: String = ""
@@ -106,7 +84,6 @@ struct SignupView: View {
                         Image(systemName: "chevron.backward")
                             .foregroundColor(.theme.darkGreyColor)
                     }
-
                 }
             }
         }
@@ -224,18 +201,28 @@ extension SignupView {
             WrappingHStack(alignment: .leading) {
                 ForEach(signupViewModel.jobs.indices, id: \.self) { index in
                     Text(signupViewModel.jobs[index].title)
-                        .foregroundColor(signupViewModel.jobs[index].isSelected ? .theme.whiteColor : .theme.blackColor)
+                        .foregroundColor(signupViewModel.jobs[index].isSelected ? Color.theme.warningRedColor : Color.theme.blackColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
                         .overlay {
                             Capsule()
                                 .stroke(Color.black, lineWidth: 1)
-//                                .background(jobs[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
+//                                .background(signupViewModel.jobs[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
                         }
                         .onTapGesture {
-                            print(signupViewModel.jobs[index].title)
+                            let job = signupViewModel.jobs[index].title
                             signupViewModel.jobs[index].isSelected.toggle()
-                            print(signupViewModel.jobs[index].isSelected)
+                            if signupViewModel.jobs[index].isSelected {
+                                signupViewModel.selectedJobs.append(job)
+                            } else {
+                                if let index = signupViewModel.selectedJobs.firstIndex(of: job) {
+                                    signupViewModel.selectedJobs.remove(at: index )
+                                } else {
+                                    print("인덱스 없음")
+                                }
+                             
+                            }
+                            print(signupViewModel.selectedJobs)
                         }
                 }
             }
@@ -265,16 +252,31 @@ extension SignupView {
             .padding(.horizontal, 16)
 
             WrappingHStack(alignment: .leading) {
-                ForEach(interests, id: \.self) { item in
-                    Text(item)
+                ForEach(signupViewModel.interests.indices, id: \.self) { index in
+                    Text(signupViewModel.interests[index].title)
+                        .foregroundColor(signupViewModel.interests[index].isSelected ? .theme.warningRedColor : .theme.blackColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
                         .overlay {
                             Capsule()
                                 .stroke(Color.black, lineWidth: 1)
+//                                .background(signupViewModel.interests[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
                         }
                         .onTapGesture {
-                            print(item)
+                            print(signupViewModel.interests[index].title)
+                            signupViewModel.interests[index].isSelected.toggle()
+                            let interest = signupViewModel.interests[index].title
+                            if signupViewModel.interests[index].isSelected {
+                                signupViewModel.selectedInterests.append(interest)
+                            } else {
+                                if let index = signupViewModel.selectedInterests.firstIndex(of: interest) {
+                                    signupViewModel.selectedInterests.remove(at: index )
+                                } else {
+                                    print("인덱스 없음")
+                                }
+                             
+                            }
+                            print(signupViewModel.selectedInterests)
                         }
                 }
             }
@@ -305,16 +307,31 @@ extension SignupView {
             .padding(.horizontal, 16)
 
             WrappingHStack(alignment: .leading) {
-                ForEach(abilities, id: \.self) { item in
-                    Text(item)
+                ForEach(signupViewModel.abilities.indices, id: \.self) { index in
+                    Text(signupViewModel.abilities[index].title)
+                        .foregroundColor(signupViewModel.abilities[index].isSelected ? .theme.warningRedColor : .theme.blackColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
                         .overlay {
                             Capsule()
                                 .stroke(Color.black, lineWidth: 1)
+//                                .background(signupViewModel.abilities[index].isSelected ? Color.theme.mainPurpleColor : Color.theme.whiteColor)
                         }
                         .onTapGesture {
-                            print(item)
+                            print(signupViewModel.abilities[index].title)
+                            signupViewModel.abilities[index].isSelected.toggle()
+                            let ability = signupViewModel.abilities[index].title
+                            if signupViewModel.abilities[index].isSelected {
+                                signupViewModel.selectedAbilities.append(ability)
+                            } else {
+                                if let index = signupViewModel.selectedAbilities.firstIndex(of: ability) {
+                                    signupViewModel.selectedAbilities.remove(at: index )
+                                } else {
+                                    print("인덱스 없음")
+                                }
+                             
+                            }
+                            print(signupViewModel.selectedAbilities)
                         }
                 }
             }

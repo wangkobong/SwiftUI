@@ -9,6 +9,7 @@ import SwiftUI
 import GoogleSignIn
 import GoogleSignInSwift
 import FirebaseAuth
+import AuthenticationServices
 
 @MainActor
 final class AuthenticationViewModel: ObservableObject {
@@ -53,6 +54,14 @@ struct AuthenticationView: View {
                     }
                 }
             }
+            
+            SignInWithAppleButton { request in
+                
+            } onCompletion: { result in
+                
+            }
+            .frame(height: 55)
+
             
             Spacer()
         }
