@@ -26,6 +26,10 @@ final class SignupDataService {
             SignupModel(title: "직장인"),
             SignupModel(title: "대학(원)생"),
             SignupModel(title: "프리랜서"),
+            SignupModel(title: "기타"),
+            SignupModel(title: "직장인"),
+            SignupModel(title: "대학(원)생"),
+            SignupModel(title: "프리랜서"),
             SignupModel(title: "기타")
         ]
         
